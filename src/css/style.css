@@ -1,0 +1,69 @@
+.__main__{
+    background-image: url(/src/img/png/bacground.png);
+}
+@media(max-aspect-ratio: 4/3 ){
+   
+}
+
+.box_menu{
+    height: 204px; /*430px*/
+    margin-top: 5.3%;
+}
+.box_menu_column{
+    position: relative;
+    width: 60px;
+    height: 180px;
+}
+
+
+.box_menu_column_left{
+    position: absolute;
+    left: 7%;
+}
+.box_menu_column_left_map_icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px ;     
+}
+.box_menu_column_left_afisha_icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.box_menu_column_right{
+    position: absolute;
+    right: 7%;
+}
+.box_menu_column_right_coffee_icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px ;
+}
+.box_menu_column_right_hmel_icon{
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.box_menu_column_middle{
+    position: relative;
+    width: 105px;
+    height: 117px;
+    top: 2.1%;
+    /* left: 37%; */
+    margin: 0 auto ;
+}
+.box_menu_main_logo_icon{
+    position: relative;
+    /* margin: 5.3px 0 20px 37.7%; */
+    width: 105px;
+    height: 117px;
+    
+}
