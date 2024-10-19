@@ -2,7 +2,7 @@
     background-image: url(/src/img/png/bacground.png);
 }
 #__main__{
-    width: 1000px;
+    /* width: 1000px; */
     height:2000px;
 }
 .page_test{
@@ -93,7 +93,7 @@
     .box_menu_text{
         position: relative;
         height: 250px;
-        width: 86vh;
+        /* width: 86vh; */
         margin: 10% auto;
     }
     #box_menu_text_coffee{
@@ -119,19 +119,19 @@
     }
     #box_menu_text_coffee_line{
         position: absolute;
-        width: 100vw;
+        width: 0;
         right: 0;
         
     }
     #box_menu_text_beer_line{
         position: absolute;
-        width: 10px;
+        width: 0;
         /* margin-top: 72px; */
         right: 0;
     }
     #box_menu_text_poster_line{
         position: absolute;
-        width: 10px;
+        width: 0;
         right: 0;
         /* margin-top: 144px; */
     }
@@ -141,7 +141,7 @@
         position: absolute;
         height: 250px;
         width: 60px;
-        /* left: 7%; */
+        left: 7%;
     }
     #box_menu_text_icons_coffee_icon{
         margin-top: 10px;
