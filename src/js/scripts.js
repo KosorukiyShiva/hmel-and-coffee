@@ -28,7 +28,7 @@ function render(val) {
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
 }
 
-// render(windowInnerWidth)
+ render(windowInnerWidth)
 
 window.addEventListener('scroll', function () {
     const coef_coffee_line = (half_windowInnerWidth + 86)/(prcnt_windowInnerHeight*26.8) 
@@ -43,6 +43,11 @@ window.addEventListener('scroll', function () {
         line_coffee.style.width =`${(half_windowInnerWidth + 86)-(coef_coffee_line*scrollPosition)}px`
         line_beer.style.width =`${(half_windowInnerWidth + 129)-(coef_beer_line*scrollPosition)}px`
         line_poster.style.width =`${(half_windowInnerWidth + 172)-(coef_poster_line*scrollPosition)}px`
+    }
+    if(scrollPosition>prcnt_windowInnerHeight*26.8){
+        line_coffee.style.width =`${0}px`
+        line_beer.style.width =`${0}px`
+        line_poster.style.width =`${0}px`
     }
   });
 
