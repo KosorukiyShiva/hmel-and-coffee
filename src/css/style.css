@@ -1,6 +1,15 @@
 .__main__{
     background-image: url(/src/img/png/bacground.png);
 }
+#__main__{
+    width: 1000px;
+    height:2000px;
+}
+.page_test{
+    width: 300px;
+    height: 6000px;
+    background-color: green;
+}
 .__h1{
     font-family: Sunday;
     font-size: 60px;
@@ -16,34 +25,37 @@
     .box_menu{
         height: 204px; /*430px*/
         margin-top: 5.3%;
+        position: relative;
     }
     .box_menu_column{
-        position: relative;
+        position: fixed;
         width: 60px;
         height: 180px;
     }
     
     
     .box_menu_column_left{
-        position: absolute;
+        position: fixed;
         left: 7%;
     }
     .box_menu_column_left_map_icon{
         position: relative;
         width: 60px;
         height: 60px;
-        margin-bottom: 20px ;     
+        margin-bottom: 20px ;
+        scale: 83%;     
     }
     .box_menu_column_left_afisha_icon{
         position: relative;
         width: 60px;
         height: 60px;
+        scale: 83%;
     }
     
     
     
     .box_menu_column_right{
-        position: absolute;
+        position: fixed;
         right: 7%;
     }
     .box_menu_column_right_coffee_icon{
@@ -51,11 +63,13 @@
         width: 60px;
         height: 60px;
         margin-bottom: 20px ;
+        scale: 83%;
     }
     .box_menu_column_right_hmel_icon{
         position: relative;
         width: 60px;
         height: 60px;
+        scale: 83%;
     }
     
     
@@ -79,19 +93,23 @@
     .box_menu_text{
         position: relative;
         height: 250px;
+        width: 86vh;
         margin: 10% auto;
     }
-    .box_menu_text_coffee{
+    #box_menu_text_coffee{
         position: relative;
         text-align: center;
+        margin-left: 0px;
     }
-    .box_menu_text_beer{
+    #box_menu_text_beer{
         position: relative;
         text-align: center;
+        margin-left: 0px;
     }
-    .box_menu_text_poster{
+    #box_menu_text_poster{
         position: relative;
         text-align: center;
+        margin-left: 0px;
     }
 
 
@@ -101,7 +119,7 @@
     }
     #box_menu_text_coffee_line{
         position: absolute;
-        width: 10px;
+        width: 100vw;
         right: 0;
         
     }
@@ -117,5 +135,23 @@
         right: 0;
         /* margin-top: 144px; */
     }
+
+
+    .box_menu_text_icons{
+        position: absolute;
+        height: 250px;
+        width: 60px;
+        /* left: 7%; */
+    }
+    #box_menu_text_icons_coffee_icon{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #box_menu_text_icons_hmel_icon{
+        margin-bottom: 10px;
+    }
+    #box_menu_text_icons_afisha_icon
+    
+    
 }
 
