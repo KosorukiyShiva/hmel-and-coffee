@@ -3,12 +3,29 @@
 }
 #__main__{
     /* width: 1000px; */
-    height:2000px;
+    height:4000px;
+}
+.size_debug{
+    position: fixed;
+    font-size: 12px;
+    color: #FFFFFF;
 }
 .page_test{
     width: 300px;
     height: 6000px;
     background-color: green;
+}
+@font-face {
+    font-family: "Sunday";
+    src: url(/src/fonts/Sunday-Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: "Chalkduster";
+    src: url(/src/fonts/Chalkduster.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Monocraft";
+    src: url(/src/fonts/Monocraft.otf) format("opentype");
 }
 .__h1{
     font-family: Sunday;
@@ -150,5 +167,7 @@
     #box_menu_text_icons_hmel_icon{
         margin-bottom: 10px;
     }
-    #box_menu_text_icons_afisha_icon{}
+    #box_menu_text_icons_afisha_icon{
+
+    }
 }

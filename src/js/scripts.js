@@ -2,6 +2,7 @@ const windowInnerWidth = window.innerWidth
 const windowInnerHeight = window.innerHeight
 const __main__ = document.getElementById('__main__')
 const _box_menu =  document.getElementById('box_menu')
+const size_debug = document.getElementById('size_debug')
 
 const line_coffee = document.getElementById('box_menu_text_coffee_line')
 const line_beer = document.getElementById('box_menu_text_beer_line')
@@ -31,11 +32,14 @@ function render(val) {
     icon_menu_beer.style.opacity = 0
     icon_menu_poster.style.opacity = 0
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
+    size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
 }
 
  render(windowInnerWidth)
 
 window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY
+
     //трекеры
     // console.log(prcnt_windowInnerHeight)
     // console.log(prcnt_windowInnerHeight*scrollPosition)
@@ -52,9 +56,7 @@ window.addEventListener('scroll', function () {
     const coef_coffee_text = (half_windowInnerWidth + 86 )/(prcnt_windowInnerHeight*26.8)
     const coef_beer_text = (half_windowInnerWidth - 129)
     const coef_poster_text = (half_windowInnerWidth - 172)
-    
-    const scrollPosition = window.scrollY
-     
+
     //сворачивание линий 
     if(scrollPosition >=0 && scrollPosition<=prcnt_windowInnerHeight*26.8){ 
         line_coffee.style.width =`${(half_windowInnerWidth + 86)-(coef_coffee_line*scrollPosition)}px`
@@ -62,14 +64,14 @@ window.addEventListener('scroll', function () {
         line_poster.style.width =`${(half_windowInnerWidth + 172)-(coef_poster_line*scrollPosition)}px`
     
     //сдвиг текста при крокрутке
-        if((scrollPosition/windowInnerHeight *800)<93){
-            coffee_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
-            coffee_text_pos.style.opacity = 100
-            beer_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
-            beer_text_pos.style.opacity = 100
-            poster_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
-            poster_text_pos.style.opacity = 100
-        }else if((scrollPosition/windowInnerHeight *800)>=93){
+        if((scrollPosition/windowInnerHeight *800)<91){
+                coffee_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
+                coffee_text_pos.style.opacity = 100
+                beer_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
+                beer_text_pos.style.opacity = 100
+                poster_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
+                poster_text_pos.style.opacity = 100
+        }else if((scrollPosition/windowInnerHeight *800)>=91){
             coffee_text_pos.style.paddingLeft = `${0}vw`
             coffee_text_pos.style.opacity = 0
             beer_text_pos.style.paddingLeft = `${0}vw`
@@ -78,20 +80,16 @@ window.addEventListener('scroll', function () {
             poster_text_pos.style.opacity = 0
         }
 
-    // сворачивание текста
-        if(scrollPosition>prcnt_windowInnerHeight*6){
-            poster_text_pos.textContent = 'АФИШ'
-            coffee_text_pos.textContent = 'КОФЕ'
-            beer_text_pos.textContent = 'ПИВО'
-            if(scrollPosition>prcnt_windowInnerHeight*8){
+        // сворачивание текста
+        if(scrollPosition>prcnt_windowInnerHeight*7){
                 coffee_text_pos.textContent = 'КОФ'
                 beer_text_pos.textContent = 'ПИВ'
                 poster_text_pos.textContent = 'АФИ'
-                if(scrollPosition>prcnt_windowInnerHeight*9){
+                if(scrollPosition>prcnt_windowInnerHeight*8){
                     coffee_text_pos.textContent = 'КО'
                     beer_text_pos.textContent = 'ПИ'
                     poster_text_pos.textContent = 'АФ'
-                    if(scrollPosition>prcnt_windowInnerHeight*10.5){
+                    if(scrollPosition>prcnt_windowInnerHeight*9){
                         coffee_text_pos.textContent = 'К'
                         beer_text_pos.textContent = 'П'
                         poster_text_pos.textContent = 'А'
@@ -107,27 +105,82 @@ window.addEventListener('scroll', function () {
                     beer_text_pos.textContent = 'ПИВ'
                     poster_text_pos.textContent = 'АФИ'
                 }
-            }
-            else{
+        }
+        else{
                 poster_text_pos.textContent = 'АФИШ'
                 coffee_text_pos.textContent = 'КОФЕ'
                 beer_text_pos.textContent = 'ПИВО'
-            }
+        }
+        if(scrollPosition>prcnt_windowInnerHeight*5.5){
+                poster_text_pos.textContent = 'АФИШ'
+                if(scrollPosition>prcnt_windowInnerHeight*6.6){
+                    poster_text_pos.textContent = 'АФИ'
+                    if(scrollPosition>prcnt_windowInnerHeight*8.5){
+                        poster_text_pos.textContent = 'АФ'
+                        if(scrollPosition>prcnt_windowInnerHeight*9.5){
+                            poster_text_pos.textContent = 'А'
+                        }
+                        else{
+                            poster_text_pos.textContent = 'АФ'
+                        }
+                    }
+                    else{
+                        poster_text_pos.textContent = 'АФИ'
+                    }
+                }
+                else{
+                    poster_text_pos.textContent = 'АФИШ'
+                }
         }
         else{
             poster_text_pos.textContent = 'АФИША'
-            coffee_text_pos.textContent = 'КОФЕ'
-            beer_text_pos.textContent = 'ПИВО'
         }
-        
     }
+
     //полное сворачивание линий под текстом меню при достижении опред положения
     if(scrollPosition>prcnt_windowInnerHeight*26.8){
         line_coffee.style.width =`${0}px`
         line_beer.style.width =`${0}px`
         line_poster.style.width =`${0}px`
     }
-  }
-);
+
+    //сворачивание икононок текстового меню и проявление иконок верхнего меню
+    if(scrollPosition>prcnt_windowInnerHeight*17.9){
+        icon_text_coffee.style.opacity = 0
+        icon_menu_coffee.style.opacity = 100
+        if(scrollPosition>prcnt_windowInnerHeight*25){
+            icon_text_hmel.style.opacity = 0
+            icon_menu_beer.style.opacity = 100
+            if(scrollPosition>prcnt_windowInnerHeight*29.5){
+                icon_text_poster.style.opacity = 0
+                icon_menu_poster.style.opacity = 100
+            }
+            else{
+                icon_text_coffee.style.opacity = 0
+                icon_text_hmel.style.opacity = 0
+                icon_text_poster.style.opacity = 100
+                icon_menu_coffee.style.opacity = 100
+                icon_menu_poster.style.opacity = 0
+                icon_menu_beer.style.opacity = 1000
+            }
+        }
+        else{
+            icon_text_coffee.style.opacity = 0
+            icon_text_hmel.style.opacity = 100
+            icon_text_poster.style.opacity = 100
+            icon_menu_coffee.style.opacity = 100
+            icon_menu_poster.style.opacity = 0
+            icon_menu_beer.style.opacity = 0
+        }
+    }
+    else{
+        icon_text_coffee.style.opacity = 100
+        icon_text_hmel.style.opacity = 100
+        icon_text_poster.style.opacity = 100
+        icon_menu_coffee.style.opacity = 0
+        icon_menu_poster.style.opacity = 0
+        icon_menu_beer.style.opacity = 0
+    }
+});
 
 
