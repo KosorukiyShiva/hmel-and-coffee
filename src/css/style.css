@@ -3,13 +3,34 @@
 }
 #__main__{
     /* width: 1000px; */
-    height:2000px;
+
+    height:4000px;
+}
+.size_debug{
+    position: fixed;
+    font-size: 12px;
+    color: #FFFFFF;
+
 }
 .page_test{
     width: 300px;
     height: 6000px;
     background-color: green;
 }
+
+@font-face {
+    font-family: "Sunday";
+    src: url(/src/fonts/Sunday-Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: "Chalkduster";
+    src: url(/src/fonts/Chalkduster.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Monocraft";
+    src: url(/src/fonts/Monocraft.otf) format("opentype");
+}
+
 .__h1{
     font-family: Sunday;
     font-size: 60px;
@@ -94,7 +115,8 @@
         position: relative;
         height: 250px;
         /* width: 86vh; */
-        margin: 10% auto;
+        margin: 0 auto;
+
     }
     #box_menu_text_coffee{
         position: relative;
@@ -119,22 +141,23 @@
     }
     #box_menu_text_coffee_line{
         position: absolute;
-        width: 10px;
+        width: 0;
         right: 0;
         
     }
     #box_menu_text_beer_line{
         position: absolute;
-        width: 10px;
+        width: 0;
         /* margin-top: 72px; */
         right: 0;
     }
     #box_menu_text_poster_line{
         position: absolute;
-        width: 10px;
+        width: 0;
         right: 0;
         /* margin-top: 144px; */
     }
+
 
 
     .box_menu_text_icons{
@@ -150,8 +173,7 @@
     #box_menu_text_icons_hmel_icon{
         margin-bottom: 10px;
     }
-    #box_menu_text_icons_afisha_icon
-    
-    
-}
+    #box_menu_text_icons_afisha_icon{
 
+    }
+}
