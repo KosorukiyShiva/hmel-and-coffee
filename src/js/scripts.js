@@ -36,27 +36,32 @@ function render(val) {
  render(windowInnerWidth)
 
 window.addEventListener('scroll', function () {
+    //трекеры
+    // console.log(prcnt_windowInnerHeight)
+    // console.log(prcnt_windowInnerHeight*scrollPosition)
+    // console.log(_prcnt_beer_line)
+    console.log(scrollPosition);
+    console.log(scrollPosition/windowInnerHeight *100)
+
     //коэффициенты для линий
     const coef_coffee_line = (half_windowInnerWidth + 86)/(prcnt_windowInnerHeight*26.8) 
     const coef_beer_line = (half_windowInnerWidth + 129)/(prcnt_windowInnerHeight*26.8)
     const coef_poster_line = (half_windowInnerWidth + 172)/(prcnt_windowInnerHeight*26.8)
 
-    
+    //коэффициенты для текста
     const coef_coffee_text = (half_windowInnerWidth + 86 )/(prcnt_windowInnerHeight*26.8)
     const coef_beer_text = (half_windowInnerWidth - 129)
     const coef_poster_text = (half_windowInnerWidth - 172)
-    // console.log(_prcnt_beer_line)    
+    
     const scrollPosition = window.scrollY
-    console.log(scrollPosition);
-    // console.log(prcnt_windowInnerHeight)
-    // console.log(prcnt_windowInnerHeight*scrollPosition)
-    console.log(scrollPosition/windowInnerHeight *100) 
-    if(scrollPosition >=0 && scrollPosition<=prcnt_windowInnerHeight*26.8){
-        // console.log(scrollPosition/windowInnerHeight *100)         //сворачивание линий под текстом меню при прокрутке
+     
+    //сворачивание линий 
+    if(scrollPosition >=0 && scrollPosition<=prcnt_windowInnerHeight*26.8){ 
         line_coffee.style.width =`${(half_windowInnerWidth + 86)-(coef_coffee_line*scrollPosition)}px`
         line_beer.style.width =`${(half_windowInnerWidth + 129)-(coef_beer_line*scrollPosition)}px`
         line_poster.style.width =`${(half_windowInnerWidth + 172)-(coef_poster_line*scrollPosition)}px`
     
+    //сдвиг текста при крокрутке
         if((scrollPosition/windowInnerHeight *800)<93){
             coffee_text_pos.style.paddingLeft = `${(scrollPosition/windowInnerHeight *800)}vw`
             coffee_text_pos.style.opacity = 100
@@ -73,6 +78,7 @@ window.addEventListener('scroll', function () {
             poster_text_pos.style.opacity = 0
         }
 
+    // сворачивание текста
         if(scrollPosition>prcnt_windowInnerHeight*6){
             poster_text_pos.textContent = 'АФИШ'
             coffee_text_pos.textContent = 'КОФЕ'
@@ -115,7 +121,8 @@ window.addEventListener('scroll', function () {
         }
         
     }
-    if(scrollPosition>prcnt_windowInnerHeight*26.8){            //полное сворачивание линий под текстом меню при достижении опред положения
+    //полное сворачивание линий под текстом меню при достижении опред положения
+    if(scrollPosition>prcnt_windowInnerHeight*26.8){
         line_coffee.style.width =`${0}px`
         line_beer.style.width =`${0}px`
         line_poster.style.width =`${0}px`
