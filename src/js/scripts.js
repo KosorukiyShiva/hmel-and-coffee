@@ -20,6 +20,8 @@ const icon_menu_coffee = document.getElementById('box_menu_column_right_coffee_i
 const icon_menu_beer = document.getElementById('box_menu_column_right_hmel_icon')
 const icon_menu_poster = document.getElementById('box_menu_column_left_afisha_icon')
 
+
+
 const half_windowInnerWidth = windowInnerWidth/2
 const prcnt_windowInnerHeight = Number(windowInnerHeight)/100
 // __main__.style.width = `${windowInnerWidth}px`
@@ -32,6 +34,7 @@ function render(val) {
     icon_menu_beer.style.opacity = 0
     icon_menu_poster.style.opacity = 0
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
+
     size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
 }
 
@@ -182,5 +185,3 @@ window.addEventListener('scroll', function () {
         icon_menu_beer.style.opacity = 0
     }
 });
-
-
