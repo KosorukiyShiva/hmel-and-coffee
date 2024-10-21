@@ -111,11 +111,12 @@
         
     }
     
-    .box_menu_text{
+    #box_menu_textid{
         position: relative;
         height: 250px;
-        /* width: 86vh; */
-        margin: 0 auto;
+        overflow-x: hidden;
+        width: 100vh;
+        margin: 0 auto 20px;
 
     }
     #box_menu_text_coffee{
@@ -176,4 +177,56 @@
     #box_menu_text_icons_afisha_icon{
 
     }
-}
+
+
+
+    /*CAROUSEL FIELD*/
+    #carousel_block{
+        margin: 0 0 20px;
+    }
+    .slides_carousel{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 340px;
+        /* height: 200px; */
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        
+    }
+    .slides_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100px;
+        /* height: 250px; */
+        /* font-size: 50px; */
+        scroll-snap-align: start;
+        background-repeat: no-repeat;
+        /* background-position: -40px 0px; */
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .slides_img_0{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/1.png);
+        /* background-color: blue; */
+    }
+    .slides_img_1{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/2.png);
+        /* background-color: brown; */
+    }
+    .slides_img_2{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/3.png);
+        /* background-color: aqua; */
+    }
+    /*COFFE MENU*/
+    #coffe_menu{
+        
+    }
+}   

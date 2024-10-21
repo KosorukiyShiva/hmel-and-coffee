@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/src/css/normalize.css">
     <link rel="stylesheet" href="/src/css/reset.css">
     <meta name="discription" content="Бар «Хмель & Кофе» — это уютное место, где можно насладиться крафтовым пивом и кофе. Здесь есть восемь кранов с разливным пивом и три холодильника с бутылочным.">
+    <script src="/src/js/getter.js"></script>
     <script src="/src/js/scripts.js" defer></script>
+    <script src="/src/js/carousel.js" defer></script>
 </head>
 <body class="__main__" id="__main__">
     <header>
@@ -28,7 +30,7 @@
         <h1 class="size_debug" id="size_debug"></h1>
     </header>
     <nav>
-        <body class="box_menu_text">
+        <div class="box_menu_text" id="box_menu_textid">
             <div class="box_menu_text_icons" id="box_menu_text_icons">
                 <img  src="/src/icons/coffee_white.svg" alt="/src/icons/coffee_black.svg.svg" class="box_menu_text_icons_coffee_icon box_menu_column_right_coffee_icon" id="box_menu_text_icons_coffee_icon">
                 <img  src="/src/icons/hmel_white.svg" alt="/src/icons/hmel_black.svg" class="box_menu_text_icons_hmel_icon box_menu_column_right_hmel_icon" id="box_menu_text_icons_hmel_icon">
@@ -46,9 +48,20 @@
                 АФИША
             </h1>
             <div id="box_menu_text_poster_line" class="box_menu_text_poster_line box_menu_text_line"></div>
-        </body>
+        </div>
     </nav>
-    <main></main>
+    <main>
+        <div class="carousel" id="carousel_block">
+            <div class="slides_carousel" id="slides_carousel">
+                <div class="slides_img slides_img_0" id="slides_img_0"></div>
+                <div class="slides_img slides_img_1" id="slides_img_1"></div>
+                <div class="slides_img slides_img_2" id="slides_img_2"></div>
+            </div>
+        </div>
+        <div class="coffe_menu" id="coffe_menu">
+
+        </div>
+    </main>
     <footer></footer>    
 </body>
 </html>
