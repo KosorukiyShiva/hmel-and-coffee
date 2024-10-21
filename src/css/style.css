@@ -227,6 +227,9 @@
     }
     /*COFFE MENU*/
     #coffe_menu{
-        
+        width: 395px;
+        height: 240px;
+        margin: 0 auto;
+        background-color: aquamarine;
     }
 }   
