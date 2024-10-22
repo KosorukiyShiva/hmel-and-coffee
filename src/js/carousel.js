@@ -21,7 +21,9 @@ const slides_img_9 = document.getElementById("slides_img_9")
 const slides_carousel = document.getElementById('slides_carousel')
 
 carousel_block.style.width = `${windowInnerWidth}px`
+carousel_block.style.height = `${prcnt_windowInnerHeight*43}px`
 slides_carousel.style.width = `${prcnt_windowInnerWidth*69}px`
+slides_carousel.style.height = `${prcnt_windowInnerHeight*43+10}px`
 
 slides_img_0.style.flexBasis = `${prcnt_windowInnerWidth*62}px`
 slides_img_0.style.height = `${prcnt_windowInnerHeight*43}px`
