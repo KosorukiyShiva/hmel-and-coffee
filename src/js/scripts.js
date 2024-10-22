@@ -1,5 +1,8 @@
+/*в файле getter
 const windowInnerWidth = window.innerWidth
 const windowInnerHeight = window.innerHeight
+*/
+
 const __main__ = document.getElementById('__main__')
 const _box_menu =  document.getElementById('box_menu')
 const size_debug = document.getElementById('size_debug')
@@ -21,10 +24,14 @@ const icon_menu_beer = document.getElementById('box_menu_column_right_hmel_icon'
 const icon_menu_poster = document.getElementById('box_menu_column_left_afisha_icon')
 
 
+const box_menu_text = document.getElementById('box_menu_textid')
+box_menu_text.style.width = `${windowInnerWidth}px`
+
 
 const half_windowInnerWidth = windowInnerWidth/2
 const prcnt_windowInnerHeight = Number(windowInnerHeight)/100
-// __main__.style.width = `${windowInnerWidth}px`
+const prcnt_windowInnerWidth = Number(windowInnerWidth)/100
+__main__.style.width = `${windowInnerWidth}px`
 function render(val) {
     _box_menu.style.width = Number(windowInnerWidth)
     line_coffee.style.width=`${(half_windowInnerWidth + 86)}px`
@@ -33,9 +40,11 @@ function render(val) {
     icon_menu_coffee.style.opacity = 0
     icon_menu_beer.style.opacity = 0
     icon_menu_poster.style.opacity = 0
+    console.log(windowInnerWidth)
+    box_menu_text.style.width = `${(windowInnerWidth)}px`
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
 
-    size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
+    // size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
 }
 
  render(windowInnerWidth)
@@ -84,68 +93,68 @@ window.addEventListener('scroll', function () {
         }
 
         // сворачивание текста
-        if(scrollPosition>prcnt_windowInnerHeight*7){
-                coffee_text_pos.textContent = 'КОФ'
-                beer_text_pos.textContent = 'ПИВ'
-                poster_text_pos.textContent = 'АФИ'
-                if(scrollPosition>prcnt_windowInnerHeight*8){
-                    coffee_text_pos.textContent = 'КО'
-                    beer_text_pos.textContent = 'ПИ'
-                    poster_text_pos.textContent = 'АФ'
-                    if(scrollPosition>prcnt_windowInnerHeight*9){
-                        coffee_text_pos.textContent = 'К'
-                        beer_text_pos.textContent = 'П'
-                        poster_text_pos.textContent = 'А'
-                    }
-                    else{
-                        coffee_text_pos.textContent = 'КО'
-                        beer_text_pos.textContent = 'ПИ'
-                        poster_text_pos.textContent = 'АФ'
-                    }
-                }
-                else{
-                    coffee_text_pos.textContent = 'КОФ'
-                    beer_text_pos.textContent = 'ПИВ'
-                    poster_text_pos.textContent = 'АФИ'
-                }
-        }
-        else{
-                poster_text_pos.textContent = 'АФИШ'
-                coffee_text_pos.textContent = 'КОФЕ'
-                beer_text_pos.textContent = 'ПИВО'
-        }
-        if(scrollPosition>prcnt_windowInnerHeight*5.5){
-                poster_text_pos.textContent = 'АФИШ'
-                if(scrollPosition>prcnt_windowInnerHeight*6.6){
-                    poster_text_pos.textContent = 'АФИ'
-                    if(scrollPosition>prcnt_windowInnerHeight*8.5){
-                        poster_text_pos.textContent = 'АФ'
-                        if(scrollPosition>prcnt_windowInnerHeight*9.5){
-                            poster_text_pos.textContent = 'А'
-                        }
-                        else{
-                            poster_text_pos.textContent = 'АФ'
-                        }
-                    }
-                    else{
-                        poster_text_pos.textContent = 'АФИ'
-                    }
-                }
-                else{
-                    poster_text_pos.textContent = 'АФИШ'
-                }
-        }
-        else{
-            poster_text_pos.textContent = 'АФИША'
-        }
+        // if(scrollPosition>prcnt_windowInnerHeight*7){
+        //         coffee_text_pos.textContent = 'КОФ'
+        //         beer_text_pos.textContent = 'ПИВ'
+        //         poster_text_pos.textContent = 'АФИ'
+        //         if(scrollPosition>prcnt_windowInnerHeight*8){
+        //             coffee_text_pos.textContent = 'КО'
+        //             beer_text_pos.textContent = 'ПИ'
+        //             poster_text_pos.textContent = 'АФ'
+        //             if(scrollPosition>prcnt_windowInnerHeight*9){
+        //                 coffee_text_pos.textContent = 'К'
+        //                 beer_text_pos.textContent = 'П'
+        //                 poster_text_pos.textContent = 'А'
+        //             }
+        //             else{
+        //                 coffee_text_pos.textContent = 'КО'
+        //                 beer_text_pos.textContent = 'ПИ'
+        //                 poster_text_pos.textContent = 'АФ'
+        //             }
+        //         }
+        //         else{
+        //             coffee_text_pos.textContent = 'КОФ'
+        //             beer_text_pos.textContent = 'ПИВ'
+        //             poster_text_pos.textContent = 'АФИ'
+        //         }
+        // }
+        // else{
+        //         poster_text_pos.textContent = 'АФИШ'
+        //         coffee_text_pos.textContent = 'КОФЕ'
+        //         beer_text_pos.textContent = 'ПИВО'
+        // }
+        // if(scrollPosition>prcnt_windowInnerHeight*5.5){
+        //         poster_text_pos.textContent = 'АФИШ'
+        //         if(scrollPosition>prcnt_windowInnerHeight*6.6){
+        //             poster_text_pos.textContent = 'АФИ'
+        //             if(scrollPosition>prcnt_windowInnerHeight*8.5){
+        //                 poster_text_pos.textContent = 'АФ'
+        //                 if(scrollPosition>prcnt_windowInnerHeight*9.5){
+        //                     poster_text_pos.textContent = 'А'
+        //                 }
+        //                 else{
+        //                     poster_text_pos.textContent = 'АФ'
+        //                 }
+        //             }
+        //             else{
+        //                 poster_text_pos.textContent = 'АФИ'
+        //             }
+        //         }
+        //         else{
+        //             poster_text_pos.textContent = 'АФИШ'
+        //         }
+        // }
+        // else{
+        //     poster_text_pos.textContent = 'АФИША'
+        // }
     }
 
     //полное сворачивание линий под текстом меню при достижении опред положения
-    if(scrollPosition>prcnt_windowInnerHeight*26.8){
-        line_coffee.style.width =`${0}px`
-        line_beer.style.width =`${0}px`
-        line_poster.style.width =`${0}px`
-    }
+    // if(scrollPosition>prcnt_windowInnerHeight*26.8){
+    //     line_coffee.style.width =`${0}px`
+    //     line_beer.style.width =`${0}px`
+    //     line_poster.style.width =`${0}px`
+    // }
 
     //сворачивание икононок текстового меню и проявление иконок верхнего меню
     if(scrollPosition>prcnt_windowInnerHeight*17.9){

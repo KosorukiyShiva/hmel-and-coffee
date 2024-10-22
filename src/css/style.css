@@ -47,6 +47,7 @@
         height: 204px; /*430px*/
         margin-top: 5.3%;
         position: relative;
+        z-index: 4;
     }
     .box_menu_column{
         position: fixed;
@@ -111,11 +112,12 @@
         
     }
     
-    .box_menu_text{
+    #box_menu_textid{
         position: relative;
         height: 250px;
-        /* width: 86vh; */
-        margin: 0 auto;
+        overflow-x: hidden;
+        width: 100vh;
+        margin: 0 auto 20px;
 
     }
     #box_menu_text_coffee{
@@ -176,4 +178,149 @@
     #box_menu_text_icons_afisha_icon{
 
     }
-}
+
+
+
+    /*CAROUSEL FIELD*/
+    #carousel_block{
+        margin: 0 0 20px;
+    }
+    .slides_carousel{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 340px;
+        /* height: 200px; */
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        
+    }
+    .slides_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100px;
+        /* height: 250px; */
+        /* font-size: 50px; */
+        scroll-snap-align: start;
+        background-repeat: no-repeat;
+        /* background-position: -40px 0px; */
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .slides_img_0{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/1.png);
+        /* background-color: blue; */
+    }
+    .slides_img_1{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/2.png);
+        /* background-color: brown; */
+    }
+    .slides_img_2{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/3.png);
+        /* background-color: aqua; */
+    }
+
+
+    
+    /*COFFE MENU*/
+    #coffe_menu{
+        position: relative;
+        z-index: 1;
+        width: 395px;
+        height: 240px;
+        margin: 0 auto;
+        /* background-color: aquamarine; */
+    }
+    .coffe_menu_head{
+        position: absolute;
+        width: 177px;
+        height: 49px;
+        left: 109px;
+        /* margin: 0 auto -10px; */
+        z-index: 3;
+        background-image: url("/src/icons/menu_table.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        /* background-color: aqua; */
+    }
+    .coffe_menu_sqr{
+        position: absolute;
+        width: 387px;
+        height: 187px;
+        top: 45px;
+        z-index: 2;
+        /* margin: 0 auto; */
+        border: #FFFFFF solid 4px;
+        background-color: #1D1D1D;
+    }
+    .coffe_menu_sqr_left{
+        position: absolute;
+        margin-top: 20px;
+        width: 165px;
+        left: 15px;
+    }
+    .coffe_menu_sqr_right{
+        position: absolute;
+        margin-top: 20px;
+        width: 165px;
+        right: 15px;
+    }
+    .coffe_menu_sqr_text_block{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .coffe_menu_sqr_text_block {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .coffe_menu_sqr_text{
+        background-color: #1D1D1D; /* Это необходимо, чтобы перекрыть точки фоном */
+        margin: 0;
+        font-family: Chalkduster;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    .coffe_menu_sqr_price{
+        position: absolute;
+        background-color: #1D1D1D; /* Это необходимо, чтобы перекрыть точки фоном */
+        margin: 2px;
+        padding-left: 2px;
+        right: 0;
+        font-family: Chalkduster;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    .coffe_menu_sqr_line{
+        position: absolute;
+        margin-top: 20px;
+        left:192px;
+        border: #FFFFFF solid 1.5px;
+        height: 94px;
+
+    }
+    .coffe_menu_sqr_sirops{
+        position: relative;
+        width: 230px;
+        height: 58px;
+        border-radius: 32px;
+        left: 78.5px;
+        top: 124px;
+        background-color: #1D1D1D;
+        border: solid 4px #FFFFFF;
+    }
+    .coffe_menu_sqr_sirops_text{
+        /* vertical-align: middle; */
+        font-family: Sunday;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+}   
