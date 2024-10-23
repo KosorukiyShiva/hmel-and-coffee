@@ -330,7 +330,7 @@
         height: 442px;
         margin: 0 auto;
         z-index: 1;
-        background-color: brown;
+        /* background-color: brown; */
     }
     .beer_menu_head{
         position: absolute;
@@ -347,21 +347,25 @@
     .beer_menu_sqr{
         position: absolute;
         width: 387px;
-        height:393.5px;
+        height: 454px;
         top: 48.5px;
         z-index: 2;
         border: #FFFFFF solid 4px;
         background-color: #1D1D1D;
     }
+
+    
     .beer_menu_sqr_number_column{
-        top: 37px;
+        z-index: 3;
+        top: 45px;
         position: absolute;
+        left: 10px;
         width: 14px;
-        height: 267px;
+        height: 297px;
         font-size: 20px;
         font-family: Chalkduster;
         color: #FFFFFF;
-        background-color: grey;
+        /* background-color: grey; */
     }
     .beer_menu_sqr_number_column_N{
         font-size: 17px;
@@ -369,22 +373,214 @@
     }
     .beer_menu_sqr_number_column_{
         position: relative;
-        line-height: 30px;
+        height: 35px;
+        display: grid;
+        align-items: end;
     }
+
+
     .beer_menu_sqr_name_column{
+        z-index: 3;
         position: absolute;
-        top: 37px;
-        left: 22px;
+        top: 45px;
+        left: 38px;
         width: 100px;
-        height: 267px;
+        height: 297px;
         font-size: 12px;
         font-family: Chalkduster;
-        background-color: grey;
+        color: #FFFFFF;
+        /* background-color: grey; */
     }
     .beer_menu_sqr_name_column_{
-        line-height: 22px;
+        height: 35px;
+        display: grid;
+        align-items: end;
     }
     .beer_menu_sqr_name_column_N{
-        line-height: 25px;
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_brewery_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 140px;
+        width: 90px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_brewery_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_sqr_brewery_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 238px;
+        width: 90px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_sqr_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_abv_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 331px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: grey; */
+    }
+    .beer_menu_abv_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_abv_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_ibu_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 381px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: grey; */
+    }
+    .beer_menu_ibu_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_ibu_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_0305_column{
+        /* opacity: 0; */
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 331px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_0305_column_{
+        width: 50px;
+        height: 35px;
+        display: grid;
+        align-items: center;
+        
+    }
+    .beer_menu_sqr_0305_column_N{
+        line-height: 17px;
+    }
+    .beer_menu_sqr_03_text{
+        position: absolute;
+        /* top: 5px; */
+        width: 32px;
+        rotate: -62deg;
+        left:0px;
+    }
+    .beer_menu_sqr_00_text{
+        position: absolute;
+        /* top: 5px; */
+        width: 32px;
+        rotate: -62deg;
+        left: 10px;
+    }
+    .beer_menu_sqr_05_text{
+        position: absolute;
+        /* top: 5px; */
+        right: 0px;
+        width: 32px;
+        rotate: -62deg;
+    }
+
+
+    .beer_menu_sqr_lines{
+        position: absolute;
+        top: 32px;
+        z-index: 4;
+        left: 11px;
+    }
+    .beer_menu_sqr_lines_horizontals{
+        position: absolute;
+    }
+    .beer_menu_sqr_lines_horisontal{
+        border:solid #FFFFFF 1px;
+        width: 364px;
+        margin-top: 33px;
+    }
+    .beer_menu_sqr_lines_verticals{
+        position: absolute;
+    }
+    .beer_menu_sqr_lines_vertical{
+        position: absolute;
+        height: 300px;
+        top: 17px;
+        width: 0px;
+        border:solid #FFFFFF 1px;
+    }
+    .beer_menu_sqr_lines_vertical_1{
+        left: 19px;
+    }
+    .beer_menu_sqr_lines_vertical_2{
+        left: 122px;
+    }
+    .beer_menu_sqr_lines_vertical_3{
+        left: 218px;
+    }
+    .beer_menu_sqr_lines_vertical_4{
+        left: 315px;
+    }
+
+
+    .beer_menu_sqr_button{
+        position: absolute;
+        left: 22.5px;
+        top: 374px;
+        background-color: #1D1D1D;
+        height: 60px;
+        width: 346px;
+        border-radius: 28px;
+        border: #FFFFFF solid 4px;
     }
 }   

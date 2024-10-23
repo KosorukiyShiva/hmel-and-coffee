@@ -11,7 +11,8 @@
     <script src="/src/js/getter.js"></script>
     <script src="/src/js/scripts.js" defer></script>
     <script src="/src/js/carousel.js" defer></script>
-    <script src="/src/js/coffe_menu.js"defer></script>
+    <script src="/src/js/coffe_menu.js" defer></script>
+    <script src="/src/js/beer_table.js" defer></script>
 </head>
 <body class="__main__" id="__main__">
     <header>
@@ -111,30 +112,235 @@
             </div>
         </div>
         <div class="beer_menu" id="beer_menu">
-            <div class="beer_menu_head"></div>
-            <div class="beer_menu_sqr">
+            <div class="beer_menu_head" id="beer_menu_head"></div>
+            <div class="beer_menu_sqr" id="beer_menu_sqr">
                 <div class="beer_menu_sqr_number_column">
-                    <span class="beer_menu_sqr_number_column_N">&#8470;</span>
-                    <span class="beer_menu_sqr_number_column_1 beer_menu_sqr_number_column_">1</span>
-                    <span class="beer_menu_sqr_number_column_2 beer_menu_sqr_number_column_">2</span>
-                    <span class="beer_menu_sqr_number_column_3 beer_menu_sqr_number_column_">3</span>
-                    <span class="beer_menu_sqr_number_column_4 beer_menu_sqr_number_column_">4</span>
-                    <span class="beer_menu_sqr_number_column_5 beer_menu_sqr_number_column_">5</span>
-                    <span class="beer_menu_sqr_number_column_6 beer_menu_sqr_number_column_">6</span>
-                    <span class="beer_menu_sqr_number_column_7 beer_menu_sqr_number_column_">7</span>
-                    <span class="beer_menu_sqr_number_column_8 beer_menu_sqr_number_column_">8</span>
+                    <div class="beer_menu_sqr_number_column_N">&#8470;</div>
+                    <div class="beer_menu_sqr_number_column_1 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">1</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_2 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">2</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_3 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">3</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_4 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">4</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_5 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">5</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_6 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">6</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_7 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">7</p>
+                    </div>
+                    <div class="beer_menu_sqr_number_column_8 beer_menu_sqr_number_column_">
+                        <p class="beer_menu_sqr_number_text">8</p>
+                    </div>
                 </div>
-                <div class="beer_menu_sqr_name_column">
-                    <span class="beer_menu_sqr_name_column_N">НАЗВАНИЕ</span>
-                    <span class="beer_menu_sqr_name_column_1 beer_menu_sqr_name_column_">kriekenbier</span>
-                    <span class="beer_menu_sqr_name_column_2 beer_menu_sqr_name_column_">зимняя меланхолия</span>
-                    <span class="beer_menu_sqr_name_column_3 beer_menu_sqr_name_column_">litovel</span>
-                    <span class="beer_menu_sqr_name_column_4 beer_menu_sqr_name_column_">отличный план</span>
-                    <span class="beer_menu_sqr_name_column_5 beer_menu_sqr_name_column_">aftermath</span>
-                    <span class="beer_menu_sqr_name_column_6 beer_menu_sqr_name_column_">speed,give meall I need</span>
-                    <span class="beer_menu_sqr_name_column_7 beer_menu_sqr_name_column_">steenbrugge</span>
-                    <span class="beer_menu_sqr_name_column_8 beer_menu_sqr_name_column_">nitro</span>
+                <div class="beer_menu_sqr_name_column" id="beer_menu_sqr_name_column">
+                    <div class="beer_menu_sqr_name_column_N">НАЗВАНИЕ</div>
+                    <div class="beer_menu_sqr_name_column_1 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">kriekenbier</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_2 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">зимняя меланхолия</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_3 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">litovel</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_4 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">отличный план</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_5 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">aftermath</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_6 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">speed,give meall I need</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_7 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">steenbrugge</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_8 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text">nitro</p>
+                        </div>
                 </div>
+                <div class="beer_menu_sqr_brewery_column" id="beer_menu_sqr_brewery_column">
+                    <div class="beer_menu_sqr_brewery_column_N">BREWERY</div>
+                    <div class="beer_menu_sqr_brewery_column_1 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">cornelissen</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_2 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">af-brew</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_3 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">czech</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_4 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">plan-b</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_5 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">stamm</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_6 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">ganza</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_7 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">palm</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_8 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text">jaws</p>
+                        </div>
+                </div>
+                <div class="beer_menu_sqr_style_column" id="beer_menu_sqr_style_column">
+                    <div class="beer_menu_sqr_style_column_N">STYLE</div>
+                    <div class="beer_menu_sqr_style_column_1 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">kriek</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_2 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">Baltic porter</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_3 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">pilsner</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_4 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">ipa</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_5 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">new zeland pale ale</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_6 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">dipa</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_7 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">blanche</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_8 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text">stout</p>
+                        </div>
+                </div>
+                <div class="beer_menu_abv_style_column" id="beer_menu_abv_style_column">
+                    <div class="beer_menu_abv_style_column_N">ABV</div>
+                    <div class="beer_menu_abv_style_column_1 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_2 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_3 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_4 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_5 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_6 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_7 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_8 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text">50,4</p>
+                        </div>
+                </div>
+                <div class="beer_menu_ibu_style_column" id="beer_menu_ibu_style_column">
+                    <div class="beer_menu_ibu_style_column_N">IBU</div>
+                    <div class="beer_menu_ibu_style_column_1 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_2 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_3 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_4 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_5 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_6 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_7 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_8 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text">300</p>
+                        </div>
+                </div>
+                <div class="beer_menu_sqr_0305_column">
+                    <div class="beer_menu_sqr_0305_column_N">0.3/0.5</div>
+                    <div class="beer_menu_sqr_0305_column_1 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_1">400</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_1">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_1">450</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_2 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_2">400</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_2">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_2">450</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_3 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_3">300</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_3">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_3">350</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_4 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_4">300</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_4">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_4">350</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_5 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_5">300</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_5">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_5">350</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_6 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_6">350</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_6">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_6">400</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_7 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_7">350</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_7">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_7">400</div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_8 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_8">300</div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_8">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_8">350</div>
+                        </div>
+                </div>
+                <div class="beer_menu_sqr_lines">
+                    <div class="beer_menu_sqr_lines_horizontals">
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_0" id="beer_menu_sqr_lines_horisontal_0"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_1" id="beer_menu_sqr_lines_horisontal_1"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_2" id="beer_menu_sqr_lines_horisontal_2"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_3" id="beer_menu_sqr_lines_horisontal_3"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_4" id="beer_menu_sqr_lines_horisontal_4"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_5" id="beer_menu_sqr_lines_horisontal_5"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_6" id="beer_menu_sqr_lines_horisontal_6"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_7" id="beer_menu_sqr_lines_horisontal_7"></div>
+                        <div class="beer_menu_sqr_lines_horisontal beer_menu_sqr_lines_horisontal_8" id="beer_menu_sqr_lines_horisontal_8"></div>
+                    </div>
+                    <div class="beer_menu_sqr_lines_verticals">
+                        <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_1" id="beer_menu_sqr_lines_vertical_1"></div>
+                        <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_2" id="beer_menu_sqr_lines_vertical_2"></div>
+                        <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_3" id="beer_menu_sqr_lines_vertical_3"></div>
+                        <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_4" id="beer_menu_sqr_lines_vertical_4"></div>
+                    </div>
+                </div>
+                <button class="beer_menu_sqr_button">
+                    <span class="coffe_menu_sqr_sirops_text">КРАФТОВОЕ ПИВО</span>
+                </button>
             </div>
         </div>
     </main>
