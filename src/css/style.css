@@ -235,7 +235,7 @@
         z-index: 1;
         width: 395px;
         height: 240px;
-        margin: 0 auto;
+        margin: 0 auto 20px;
         /* background-color: aquamarine; */
     }
     .coffe_menu_head{
@@ -322,5 +322,69 @@
         font-family: Sunday;
         font-size: 30px;
         color: #FFFFFF;
+    }
+    /*BEER TABLE*/
+    .beer_menu{
+        position: relative;
+        width: 395px;
+        height: 442px;
+        margin: 0 auto;
+        z-index: 1;
+        background-color: brown;
+    }
+    .beer_menu_head{
+        position: absolute;
+        width: 177px;
+        height: 90px;
+        /* margin: 0 auto; */
+        left: 109px;
+        /* background-color: aqua; */
+        z-index: 3;
+        background-image: url("/src/icons/menu_pivo_rozliv_table.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .beer_menu_sqr{
+        position: absolute;
+        width: 387px;
+        height:393.5px;
+        top: 48.5px;
+        z-index: 2;
+        border: #FFFFFF solid 4px;
+        background-color: #1D1D1D;
+    }
+    .beer_menu_sqr_number_column{
+        top: 37px;
+        position: absolute;
+        width: 14px;
+        height: 267px;
+        font-size: 20px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        background-color: grey;
+    }
+    .beer_menu_sqr_number_column_N{
+        font-size: 17px;
+        font-family: Chalkduster;
+    }
+    .beer_menu_sqr_number_column_{
+        position: relative;
+        line-height: 30px;
+    }
+    .beer_menu_sqr_name_column{
+        position: absolute;
+        top: 37px;
+        left: 22px;
+        width: 100px;
+        height: 267px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        background-color: grey;
+    }
+    .beer_menu_sqr_name_column_{
+        line-height: 22px;
+    }
+    .beer_menu_sqr_name_column_N{
+        line-height: 25px;
     }
 }   
