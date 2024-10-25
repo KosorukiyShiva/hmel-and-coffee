@@ -41,7 +41,7 @@ beer_menu.style.width = `${prcnt_windowInnerWidth * 95.8}px`
 beer_menu_head.style.left = `${(prcnt_windowInnerWidth * 95.8 - 177) / 2}px`
 beer_menu_sqr.style.width = `${prcnt_windowInnerWidth * 95.8-8}px`
 beer_menu_sqr_button.style.left = `${(prcnt_windowInnerWidth * 95.8 - 8 - 346)/2}px`
-if (windowInnerWidth >= 500) {Я
+if (windowInnerWidth >= 500) {
     beer_menu_abv_style_column.style.opacity = 1
     beer_menu_ibu_style_column.style.opacity = 1
 

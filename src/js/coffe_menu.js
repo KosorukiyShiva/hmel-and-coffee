@@ -29,14 +29,14 @@ coffe_menu_sqr_sirops.style.left = `${half_windowInnerWidth-130}px`
 if(windowInnerWidth>500){
     coffe_menu_sqr_left.style.width = `${225}px`
     coffe_menu_sqr_right.style.width = `${225}px`
-    coffe_menu_sqr_text_1.textContent = 'ДОППИО...........................................................'
-    coffe_menu_sqr_text_2.textContent = 'АМЕРИКАНО...................................................'
-    coffe_menu_sqr_text_3.textContent = 'ФЛЭТ УАЙТ...........................................'
-    coffe_menu_sqr_text_4.textContent = 'КАПУЧИНО.......................................'
-    coffe_menu_sqr_text_5.textContent = 'ЛАТТЕ......................................................'
-    coffe_menu_sqr_text_6.textContent = 'РАФ............................................................'
-    coffe_menu_sqr_text_7.textContent = 'КАКАО..............................................................'
-    coffe_menu_sqr_text_8.textContent = 'ЧАЙ.............................................................'
+    coffe_menu_sqr_text_1.textContent = 'ДОППИО.........................................'
+    coffe_menu_sqr_text_2.textContent = 'АМЕРИКАНО.................................'
+    coffe_menu_sqr_text_3.textContent = 'ФЛЭТ УАЙТ.........................'
+    coffe_menu_sqr_text_4.textContent = 'КАПУЧИНО.....................'
+    coffe_menu_sqr_text_5.textContent = 'ЛАТТЕ....................................'
+    coffe_menu_sqr_text_6.textContent = 'РАФ..........................................'
+    coffe_menu_sqr_text_7.textContent = 'КАКАО............................................'
+    coffe_menu_sqr_text_8.textContent = 'ЧАЙ...........................................'
     if(windowInnerWidth > 800){
         coffe_menu_sqr_left.style.width = `${300}px`
         coffe_menu_sqr_right.style.width = `${300}px`

@@ -650,7 +650,7 @@
         height: 280px;
         background-color: aqua ;
         background-image: url(/src/img/png/afisha.png);
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-position-y: center;
         border-radius: 20px 20px 0 0 ;
     }
@@ -669,6 +669,7 @@
         left: 14px;
         width: 376px;
         height: 376px;
+        margin: 0 auto;
         background-color: #1D1D1D;
         border: #FFFFFF solid 4px;
     }
@@ -751,6 +752,11 @@
         color: #FFFFFF;
         line-height: 20px;
     }
+    /* .map_sqr_phone{
+        position: absolute;
+        width: 306px;
+        height: 60px;
+    } */
     .map_sqr_phone_icon{
         position: absolute;
         width: 45px;
@@ -775,6 +781,10 @@
 
 
     /*vizitka*/
+    .vizitka{
+        height: 203px;
+        margin-bottom: 20px;
+    }
     .vizitka_sqr{
         position: absolute;
         width: 386px;
@@ -818,6 +828,7 @@
     .vizitka_sqr_contact_info{
         position: absolute;
         top: 125px;
+        width: 350px;
         font-family: Chalkduster;
         text-align: center;
         color: #FFFFFF;
