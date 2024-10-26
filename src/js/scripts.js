@@ -27,10 +27,8 @@ const icon_menu_poster = document.getElementById('box_menu_column_left_afisha_ic
 const box_menu_text = document.getElementById('box_menu_textid')
 box_menu_text.style.width = `${windowInnerWidth}px`
 
+size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight
 
-const half_windowInnerWidth = windowInnerWidth/2
-const prcnt_windowInnerHeight = Number(windowInnerHeight)/100
-const prcnt_windowInnerWidth = Number(windowInnerWidth)/100
 __main__.style.width = `${windowInnerWidth}px`
 function render(val) {
     _box_menu.style.width = Number(windowInnerWidth)
@@ -44,9 +42,8 @@ function render(val) {
     box_menu_text.style.width = `${(windowInnerWidth)}px`
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
 
-    // size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
+    size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
 }
-
  render(windowInnerWidth)
 
 window.addEventListener('scroll', function () {

@@ -16,15 +16,18 @@ const coffe_menu_sqr_text_6 = document.getElementById('coffe_menu_sqr_text_6')
 const coffe_menu_sqr_text_7 = document.getElementById('coffe_menu_sqr_text_7')
 const coffe_menu_sqr_text_8 = document.getElementById('coffe_menu_sqr_text_8')
 
-const coffe_menu_sqr_sirops = document.getElementById('coffe_menu_sqr_sirops')
+
 
 coffe_menu.style.width = `${prcnt_windowInnerWidth*95.8}px`
+
 // coffe_menu.style.height = `${prcnt_windowInnerHeight*31.9}px`
 coffe_menu_head.style.left = `${(prcnt_windowInnerWidth*95.8) / 2 - 88.5}px`
+
 coffe_menu_sqr.style.width = `${prcnt_windowInnerWidth*95.8 - 8}px`
+
 // coffe_menu_sqr.style.height = `${prcnt_windowInnerHeight * 31.9 -49}px`
 coffe_menu_sqr_line.style.left = `${(prcnt_windowInnerWidth*95.8 - 8)/2}px`
-coffe_menu_sqr_sirops.style.left = `${half_windowInnerWidth-130}px`
+
 
 if(windowInnerWidth>500){
     coffe_menu_sqr_left.style.width = `${225}px`
