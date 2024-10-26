@@ -1,0 +1,9 @@
+.beer_menu_sqr_snack{
+    z-index: 3;
+    position: absolute;
+    top: 365px;
+    left: 12px;
+    width: 365px;
+    height: 395px;
+    background-color: aqua;
+}
