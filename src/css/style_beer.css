@@ -1,9 +1,52 @@
 .beer_menu_sqr_snack{
     z-index: 3;
     position: absolute;
+    overflow: hidden;
     top: 365px;
     left: 12px;
     width: 365px;
     height: 395px;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+.beer_menu_sqr_button{
+    z-index: 4;
+}
+.beer_menu_sqr_snack_head{
+    position: absolute;
+    width: 195px;
+    left: 108px;
+    font-family: Sunday;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.beer_menu_sqr_snack_sqr_factory_points{
+    position: relative;
+    margin-bottom: 10px;
+    top: 50px;
+    height: 20px;
+    width: 360px;
+    font-family: Chalkduster;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+.beer_menu_sqr_snack_sqr_factory_points_text_{
+    position: absolute;
+    left: 0px;
+}
+.beer_menu_sqr_snack_sqr_factory_points_price_{
+    position: absolute;
+    background-color: #1d1d1d;
+    right: 0px;
+}
+.beer_menu_sqr_snack_sqr_craft_points{
+    position: relative;
+    margin-bottom: 10px;
+    top: 50px;
+    height: 20px;
+    width: 360px;
+    font-family: Chalkduster;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 24px;
 }
