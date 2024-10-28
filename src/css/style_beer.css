@@ -5,7 +5,7 @@
     top: 365px;
     left: 12px;
     width: 365px;
-    height: 395px;
+    height: 420px;
     /* background-color: aqua; */
 }
 .beer_menu_sqr_button{
@@ -49,4 +49,42 @@
     font-size: 20px;
     color: #FFFFFF;
     line-height: 24px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_chesse{
+    position: absolute;
+    top: 20px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_chesse_sub{
+    position: absolute;
+    left:70px;
+    width: 290px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_meat{
+    position: absolute;
+    top: 45px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_meat_sub_1{
+    position: absolute;
+    top: 70px;
+    right: 155px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_meat_sub_2{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_chips{
+    position: absolute;
+    top: 95px;
+}
+.beer_menu_sqr_snack_sqr_craft_points_chips_sub{
+    margin: 0;
+    padding: 4px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.beer_menu_sqr_snack_sqr_craft_points_chips_sub_{
+    display: inline;
+    margin-left: 24px;
 }
