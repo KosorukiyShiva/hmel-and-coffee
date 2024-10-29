@@ -1,12 +1,12 @@
 .beer_menu_sqr_snack{
     z-index: 3;
     position: absolute;
-    /* overflow: hidden; */
+    overflow: hidden;
     top: 365px;
     left: 12px;
     width: 843px;
     height: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .beer_menu_sqr_button{
     z-index: 4;
@@ -23,7 +23,7 @@
     position: absolute;
     top: 50px;
     width: 843px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 225px;
 }
 .beer_menu_sqr_snack_child{
@@ -33,7 +33,7 @@
     /* margin: 5px; */
     width: 365px;
     height: 150px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .beer_menu_sqr_snack_child_1{
     position: absolute;
