@@ -1,28 +1,56 @@
 .beer_menu_sqr_snack{
     z-index: 3;
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 365px;
     left: 12px;
-    width: 365px;
-    height: 420px;
-    /* background-color: aqua; */
+    width: 843px;
+    height: 300px;
+    background-color: aqua;
 }
 .beer_menu_sqr_button{
     z-index: 4;
 }
 .beer_menu_sqr_snack_head{
     position: absolute;
-    width: 195px;
+    width: 165px;
     left: 108px;
     font-family: Sunday;
     font-size: 40px;
     color: #FFFFFF;
 }
+.beer_menu_sqr_snack_parent{
+    position: absolute;
+    top: 50px;
+    width: 843px;
+    background-color: blueviolet;
+    height: 225px;
+}
+.beer_menu_sqr_snack_child{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    /* margin: 5px; */
+    width: 365px;
+    height: 150px;
+    background-color: brown;
+}
+.beer_menu_sqr_snack_child_1{
+    position: absolute;
+    height: 150px;
+}
+.beer_menu_sqr_snack_child_2{
+    position: absolute;
+    top: 150px;
+    height: 225px;
+    right: 0px;
+}
+
+
 .beer_menu_sqr_snack_sqr_factory_points{
     position: relative;
     margin-bottom: 10px;
-    top: 50px;
+    /* top: 50px; */
     height: 20px;
     width: 360px;
     font-family: Chalkduster;
@@ -42,7 +70,7 @@
 .beer_menu_sqr_snack_sqr_craft_points{
     position: relative;
     margin-bottom: 10px;
-    top: 50px;
+    /* top: 50px; */
     height: 20px;
     width: 360px;
     font-family: Chalkduster;
@@ -88,3 +116,14 @@
     display: inline;
     margin-left: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+

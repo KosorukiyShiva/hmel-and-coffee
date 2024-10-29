@@ -1,5 +1,15 @@
 const coffe_menu_sqr_sirops_text = document.getElementById('coffe_menu_sqr_sirops_text')
 const beer_menu_sqr_snack = document.getElementById('beer_menu_sqr_snack')
+const beer_menu_sqr_snack_sqr_craft = document.getElementById('beer_menu_sqr_snack_sqr_craft')
+const beer_menu_sqr_snack_head = document.getElementById('beer_menu_sqr_snack_head')
+const beer_menu_sqr_snack_parent = document.getElementById('beer_menu_sqr_snack_parent')
+const beer_menu_sqr_snack_child_1 = document.getElementById('beer_menu_sqr_snack_child_1')
+const beer_menu_sqr_snack_child_2 = document.getElementById('beer_menu_sqr_snack_child_2')
+
+const beer_menu_sqr_snack_sqr_craft_points_chesse_sub_1 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chesse_sub_1')
+const beer_menu_sqr_snack_sqr_craft_points_chesse_sub_2 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chesse_sub_2')
+const beer_menu_sqr_snack_sqr_craft_points_chesse_sub_3 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chesse_sub_3')
+
 let open_state = false
 
 beer_menu.style.height = `${510}px`
@@ -7,16 +17,53 @@ beer_menu_sqr.style.height = `${454}px`
 beer_menu_sqr_button.style.top = `${374}px`
 beer_menu_sqr_snack.style.height = `${0}px`
 
+
 function beer_table(){
     if(open_state === false){
         open_state = !open_state
         console.log(open_state)
-        beer_menu.style.height = `${925}px`
-        beer_menu_sqr.style.height = `${870}px`
-        beer_menu_sqr_button.style.top = `${790}px`
-        beer_menu_sqr_snack.style.height = `${420}px`
-        coffe_menu_sqr_sirops_text.textContent = '↑свернуть↑'
-        return
+        if(windowInnerWidth <= 400){
+            beer_menu_sqr_snack_child_1.style.width = `${320}px`
+            beer_menu_sqr_snack_child_2.style.width = `${320}px`
+            beer_menu_sqr_snack_parent.style.width = `${320}px`
+            beer_menu_sqr_snack.style.left = `${adapt_coeff}px`
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_1.textContent = 'чечил................................'
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_2.textContent = 'шарики.............................'
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_3.textContent = 'бочонок.............................'
+            // beer_menu_sqr_snack_parent.style.width = `${365}px`
+            beer_menu_sqr_snack.style.width = `${prcnt_windowInnerWidth * 88.3}px`
+            beer_menu.style.height = `${925}px`
+            beer_menu_sqr.style.height = `${870}px`
+            beer_menu_sqr_button.style.top = `${790}px`
+            beer_menu_sqr_snack.style.height = `${420}px`
+            coffe_menu_sqr_sirops_text.textContent = '↑свернуть↑'
+            return
+        }
+        if((windowInnerWidth < 820) && (windowInnerWidth > 400)){
+            beer_menu_sqr_snack.style.left = `${adapt_coeff}px`
+            beer_menu_sqr_snack_parent.style.width = `${365}px`
+            beer_menu_sqr_snack.style.width = `${prcnt_windowInnerWidth * 88.3}px`
+            beer_menu.style.height = `${925}px`
+            beer_menu_sqr.style.height = `${870}px`
+            beer_menu_sqr_button.style.top = `${790}px`
+            beer_menu_sqr_snack.style.height = `${420}px`
+            coffe_menu_sqr_sirops_text.textContent = '↑свернуть↑'
+            return
+        }
+        if(windowInnerWidth >= 820){
+            // beer_menu_sqr_snack_sqr_craft.style.right = `${0}px`
+            beer_menu_sqr_snack_child_2.style.top = `${0}px`
+            beer_menu_sqr_snack_head.style.left = `${((prcnt_windowInnerWidth * 88.3) - 165)/2}px`
+            beer_menu_sqr_snack.style.left = `${adapt_coeff}px`
+            beer_menu_sqr_snack_parent.style.width = `${prcnt_windowInnerWidth * 88.3}px`
+            beer_menu_sqr_snack.style.width = `${prcnt_windowInnerWidth * 88.3}px`
+            beer_menu.style.height = `${775}px`
+            beer_menu_sqr.style.height = `${720}px`
+            beer_menu_sqr_button.style.top = `${640}px`
+            beer_menu_sqr_snack.style.height = `${275}px`
+            coffe_menu_sqr_sirops_text.textContent = '↑свернуть↑'
+            return
+        }
     }
     if (open_state === true) {
         open_state = !open_state
