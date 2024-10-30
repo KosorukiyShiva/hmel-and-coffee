@@ -30,11 +30,30 @@ const beer_menu_sqr_snack_sqr_factory_points_text_5 = document.getElementById('b
 
 let open_state = false
 
+const beer_cards = document.getElementById('beer_cards')
+
 beer_menu.style.height = `${510}px`
 beer_menu_sqr.style.height = `${454}px`
 beer_menu_sqr_button.style.top = `${374}px`
 beer_menu_sqr_snack.style.height = `${0}px`
 
+beer_cards.style.width = `${windowInnerWidth}px`
+if(windowInnerWidth < 360){
+    beer_cards.style.gridTemplateColumns = `190px`
+    beer_cards.style.justifyContent = `center`
+}
+if((windowInnerWidth >=360) && (windowInnerWidth < 530)){
+    beer_cards.style.gridTemplateColumns = `190px 190px`
+}
+if((windowInnerWidth >= 530) && (windowInnerWidth < 700)){
+    beer_cards.style.gridTemplateColumns = `190px 190px 190px`
+}
+if((windowInnerWidth >= 700) && (windowInnerWidth < 870)){
+    beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px`
+}
+if((windowInnerWidth >= 870) && (windowInnerWidth < 1040)){
+    beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px 190px`
+}
 
 function beer_table(){
     if(open_state === false){
@@ -144,3 +163,4 @@ function beer_table(){
         return
     }
 }
+
