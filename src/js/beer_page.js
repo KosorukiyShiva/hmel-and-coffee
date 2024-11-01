@@ -36,22 +36,41 @@ beer_menu.style.height = `${510}px`
 beer_menu_sqr.style.height = `${454}px`
 beer_menu_sqr_button.style.top = `${374}px`
 beer_menu_sqr_snack.style.height = `${0}px`
-
+// console.log("123213")
+console.log(quantity_of_position)
 beer_cards.style.width = `${windowInnerWidth}px`
 if(windowInnerWidth < 360){
+    beer_cards.stylele.height = `${quantity_of_position*540}px`
+    console.log(quantity_of_position*540)
     beer_cards.style.gridTemplateColumns = `190px`
     beer_cards.style.justifyContent = `center`
 }
 if((windowInnerWidth >=360) && (windowInnerWidth < 530)){
+    quantity_of_position /= 2
+    quantity_of_position = Math.ceil(quantity_of_position) 
+    beer_cards.stylele.height = `${quantity_of_position*540}px`
+    console.log(quantity_of_position*540)
     beer_cards.style.gridTemplateColumns = `190px 190px`
 }
 if((windowInnerWidth >= 530) && (windowInnerWidth < 700)){
+    quantity_of_position /= 3
+    quantity_of_position = Math.ceil(quantity_of_position) 
+    beer_cards.stylele.height = `${quantity_of_position*540}px`
+    console.log(quantity_of_position*540)
     beer_cards.style.gridTemplateColumns = `190px 190px 190px`
 }
 if((windowInnerWidth >= 700) && (windowInnerWidth < 870)){
+    quantity_of_position /= 4
+    quantity_of_position = Math.ceil(quantity_of_position) 
+    beer_cards.stylele.height = `${quantity_of_position*540}px`
+    console.log(quantity_of_position*540)
     beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px`
 }
 if((windowInnerWidth >= 870) && (windowInnerWidth < 1040)){
+    quantity_of_position /= 5
+    quantity_of_position = Math.ceil(quantity_of_position) 
+    beer_cards.stylele.height = `${quantity_of_position*540}px`
+    console.log(quantity_of_position*540)
     beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px 190px`
 }
 
