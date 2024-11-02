@@ -1,0 +1,15 @@
+.box_menu_column_middle{
+    position: relative;
+    width: 157px;
+    height: 175px;
+    top: 1%;
+    /* left: 37%; */
+    margin: 0 auto ;
+}
+.box_menu_main_logo_icon{
+    position: relative;
+    /* margin: 5.3px 0 20px 37.7%; */
+    width: 157px;
+    height: 175px;
+    
+}
