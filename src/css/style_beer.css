@@ -131,7 +131,7 @@
     /* grid: auto-flow dense ; */
     width: 392px;
     height: 1000px;
-    background-color: blue;
+    /* background-color: blue; */
     justify-content: space-between ;
     /* padding: 10px; */
 }
@@ -185,7 +185,12 @@
     margin-top:2px;
     /* background-color: aqua; */
 }
-
+.beer_card_available{
+    opacity: 100%;
+}
+.beer_card_unavailable{
+    opacity: 50%;
+}
 
 
 
