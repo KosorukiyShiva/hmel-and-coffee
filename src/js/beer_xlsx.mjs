@@ -7,13 +7,13 @@
 import * as XLSX from 'https://unpkg.com/xlsx/xlsx.mjs';
 
 
-const url = "http://127.0.0.1:5500/src/data/table_1.xlsx";
+const url = "http://192.168.0.102:5500/src/data/table.xlsx";
 const workbook = XLSX.read(await (await fetch(url)).arrayBuffer());
-const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+const worksheet = workbook.Sheets[workbook.SheetNames[1]];
 
 var ref = worksheet['!ref']
 var quantity_of_position = ref.split("J")
-console.log(quantity_of_position[1])
+// console.log(quantity_of_position[1])
 sessionStorage.clear();
 sessionStorage.setItem("quantity_of_position_out", quantity_of_position[1])
 
@@ -31,16 +31,16 @@ let data_columnI_xlsx = [];
 let data_columnJ_xlsx = [];
 
 for (let i = 1; i <= quantity_of_position[1]; ++i) {
-    data_columnA_xlsx[i-1] = worksheet['A'+ i].v + ';';
-    data_columnB_xlsx[i-1] = worksheet['B'+ i].v + ';'; 
-    data_columnC_xlsx[i-1] = worksheet['C'+ i].v + ';';
-    data_columnD_xlsx[i-1] = worksheet['D'+ i].v + ';';
-    data_columnE_xlsx[i-1] = worksheet['E'+ i].v + ';';
-    data_columnF_xlsx[i-1] = worksheet['F'+ i].v + ';';
-    data_columnG_xlsx[i-1] = worksheet['G'+ i].v + ';';
-    data_columnH_xlsx[i-1] = worksheet['H'+ i].v + ';';
-    data_columnI_xlsx[i-1] = worksheet['I'+ i].v + ';';
-    data_columnJ_xlsx[i-1] = worksheet['J'+ i].v + ';';
+    data_columnA_xlsx[i-1] = worksheet['A' + i].v + ';';
+    data_columnB_xlsx[i-1] = worksheet['B' + i].v + ';'; 
+    data_columnC_xlsx[i-1] = worksheet['C' + i].v + ';';
+    data_columnD_xlsx[i-1] = worksheet['D' + i].v + ';';
+    data_columnE_xlsx[i-1] = worksheet['E' + i].v + ';';
+    data_columnF_xlsx[i-1] = worksheet['F' + i].v + ';';
+    data_columnG_xlsx[i-1] = worksheet['G' + i].v + ';';
+    data_columnH_xlsx[i-1] = worksheet['H' + i].v + ';';
+    data_columnI_xlsx[i-1] = worksheet['I' + i].v + ';';
+    data_columnJ_xlsx[i-1] = worksheet['J' + i].v + ';';
     // data_xlsx.push(data_row_xlsx)
     // console.log(data_row_xlsx)
 } 
@@ -54,6 +54,8 @@ sessionStorage.setItem("data_columnG_xlsx_out", data_columnG_xlsx);
 sessionStorage.setItem("data_columnH_xlsx_out", data_columnH_xlsx);
 sessionStorage.setItem("data_columnI_xlsx_out", data_columnI_xlsx);
 sessionStorage.setItem("data_columnJ_xlsx_out", data_columnJ_xlsx);
+
+
 // console.log(data_xlsx)
 // sessionStorage.setItem("data_xlsx_out", data_xlsx[0])
 // sessionStorage.setItem("data_xlsx_out", data_xlsx[1])

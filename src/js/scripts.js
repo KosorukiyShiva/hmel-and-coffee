@@ -53,8 +53,9 @@ window.addEventListener('scroll', function () {
     // console.log(prcnt_windowInnerHeight)
     // console.log(prcnt_windowInnerHeight*scrollPosition)
     // console.log(_prcnt_beer_line)
-    console.log(scrollPosition);
-    console.log(scrollPosition/windowInnerHeight *100)
+    
+    // console.log(scrollPosition);
+    // console.log(scrollPosition/windowInnerHeight *100)
 
     //коэффициенты для линий
     const coef_coffee_line = (half_windowInnerWidth + 86)/(prcnt_windowInnerHeight*26.8) 
