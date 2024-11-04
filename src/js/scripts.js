@@ -192,3 +192,4 @@ window.addEventListener('scroll', function () {
         icon_menu_beer.style.opacity = 0
     }
 });
+console.log('5')

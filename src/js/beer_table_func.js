@@ -100,65 +100,294 @@ var data_table_ = [data_columnB_tab_outter , data_columnC_tab_outter , data_colu
 // console.log(data_columnF_tab_outter)
 // console.log(data_columnG_tab_outter)
 // console.log(data_columnH_tab_outter)
+// console.log(data_table_[0][1])
 function beer_table_data(data_table_){
-    beer_menu_sqr_name_text_1.textContent = String(data_table_[0][1].v)
-    beer_menu_sqr_name_text_2.textContent = String(data_table_[0][2].v)
-    beer_menu_sqr_name_text_3.textContent = String(data_table_[0][3].v)
-    beer_menu_sqr_name_text_4.textContent = String(data_table_[0][4].v)
-    beer_menu_sqr_name_text_5.textContent = String(data_table_[0][5].v)
-    beer_menu_sqr_name_text_6.textContent = String(data_table_[0][6].v)
-    beer_menu_sqr_name_text_7.textContent = String(data_table_[0][7].v)
-    beer_menu_sqr_name_text_8.textContent = String(data_table_[0][8].v)
-    beer_menu_sqr_brewery_text_1.textContent = String(data_table_[1][1].v)
-    beer_menu_sqr_brewery_text_2.textContent = String(data_table_[1][2].v)
-    beer_menu_sqr_brewery_text_3.textContent = String(data_table_[1][3].v)
-    beer_menu_sqr_brewery_text_4.textContent = String(data_table_[1][4].v)
-    beer_menu_sqr_brewery_text_5.textContent = String(data_table_[1][5].v)
-    beer_menu_sqr_brewery_text_6.textContent = String(data_table_[1][6].v)
-    beer_menu_sqr_brewery_text_7.textContent = String(data_table_[1][7].v)
-    beer_menu_sqr_brewery_text_8.textContent = String(data_table_[1][8].v)
-    beer_menu_sqr_style_text_1.textContent = String(data_table_[2][1].v)
-    beer_menu_sqr_style_text_2.textContent = String(data_table_[2][2].v)
-    beer_menu_sqr_style_text_3.textContent = String(data_table_[2][3].v)
-    beer_menu_sqr_style_text_4.textContent = String(data_table_[2][4].v)
-    beer_menu_sqr_style_text_5.textContent = String(data_table_[2][5].v)
-    beer_menu_sqr_style_text_6.textContent = String(data_table_[2][6].v)
-    beer_menu_sqr_style_text_7.textContent = String(data_table_[2][7].v)
-    beer_menu_sqr_style_text_8.textContent = String(data_table_[2][8].v)
-    beer_menu_abv_style_text_1.textContent = String(data_table_[3][1].v)
-    beer_menu_abv_style_text_2.textContent = String(data_table_[3][2].v)
-    beer_menu_abv_style_text_3.textContent = String(data_table_[3][3].v)
-    beer_menu_abv_style_text_4.textContent = String(data_table_[3][4].v)
-    beer_menu_abv_style_text_5.textContent = String(data_table_[3][5].v)
-    beer_menu_abv_style_text_6.textContent = String(data_table_[3][6].v)
-    beer_menu_abv_style_text_7.textContent = String(data_table_[3][7].v)
-    beer_menu_abv_style_text_8.textContent = String(data_table_[3][8].v)
-    beer_menu_ibu_style_text_1.textContent = String(data_table_[4][1].v)
-    beer_menu_ibu_style_text_2.textContent = String(data_table_[4][2].v)
-    beer_menu_ibu_style_text_3.textContent = String(data_table_[4][3].v)
-    beer_menu_ibu_style_text_4.textContent = String(data_table_[4][4].v)
-    beer_menu_ibu_style_text_5.textContent = String(data_table_[4][5].v)
-    beer_menu_ibu_style_text_6.textContent = String(data_table_[4][6].v)
-    beer_menu_ibu_style_text_7.textContent = String(data_table_[4][7].v)
-    beer_menu_ibu_style_text_8.textContent = String(data_table_[4][8].v)
-    beer_menu_sqr_03_text_1.textContent = String(data_table_[5][1].v)
-    beer_menu_sqr_05_text_1.textContent = String(data_table_[6][1].v)
-    beer_menu_sqr_03_text_2.textContent = String(data_table_[5][2].v)
-    beer_menu_sqr_05_text_2.textContent = String(data_table_[6][2].v)
-    beer_menu_sqr_03_text_3.textContent = String(data_table_[5][3].v)
-    beer_menu_sqr_05_text_3.textContent = String(data_table_[6][3].v)
-    beer_menu_sqr_03_text_4.textContent = String(data_table_[5][4].v)
-    beer_menu_sqr_05_text_4.textContent = String(data_table_[6][4].v)
-    beer_menu_sqr_03_text_5.textContent = String(data_table_[5][5].v)
-    beer_menu_sqr_05_text_5.textContent = String(data_table_[6][5].v)
-    beer_menu_sqr_03_text_6.textContent = String(data_table_[5][6].v)
-    beer_menu_sqr_05_text_6.textContent = String(data_table_[6][6].v)
-    beer_menu_sqr_03_text_7.textContent = String(data_table_[5][7].v)
-    beer_menu_sqr_05_text_7.textContent = String(data_table_[6][7].v)
-    beer_menu_sqr_03_text_8.textContent = String(data_table_[5][8].v)
-    beer_menu_sqr_05_text_8.textContent = String(data_table_[6][8].v)
+    beer_menu_sqr_name_text_1.textContent = data_table_[0][1]
+    beer_menu_sqr_name_text_2.textContent = data_table_[0][2]
+    beer_menu_sqr_name_text_3.textContent = data_table_[0][3]
+    beer_menu_sqr_name_text_4.textContent = data_table_[0][4]
+    beer_menu_sqr_name_text_5.textContent = data_table_[0][5]
+    beer_menu_sqr_name_text_6.textContent = data_table_[0][6]
+    beer_menu_sqr_name_text_7.textContent = data_table_[0][7]
+    beer_menu_sqr_name_text_8.textContent = data_table_[0][8]
+    beer_menu_sqr_brewery_text_1.textContent = data_table_[1][1]
+    beer_menu_sqr_brewery_text_2.textContent = data_table_[1][2]
+    beer_menu_sqr_brewery_text_3.textContent = data_table_[1][3]
+    beer_menu_sqr_brewery_text_4.textContent = data_table_[1][4]
+    beer_menu_sqr_brewery_text_5.textContent = data_table_[1][5]
+    beer_menu_sqr_brewery_text_6.textContent = data_table_[1][6]
+    beer_menu_sqr_brewery_text_7.textContent = data_table_[1][7]
+    beer_menu_sqr_brewery_text_8.textContent = data_table_[1][8]
+    beer_menu_sqr_style_text_1.textContent = data_table_[2][1]
+    beer_menu_sqr_style_text_2.textContent = data_table_[2][2]
+    beer_menu_sqr_style_text_3.textContent = data_table_[2][3]
+    beer_menu_sqr_style_text_4.textContent = data_table_[2][4]
+    beer_menu_sqr_style_text_5.textContent = data_table_[2][5]
+    beer_menu_sqr_style_text_6.textContent = data_table_[2][6]
+    beer_menu_sqr_style_text_7.textContent = data_table_[2][7]
+    beer_menu_sqr_style_text_8.textContent = data_table_[2][8]
+    beer_menu_abv_style_text_1.textContent = data_table_[3][1]
+    beer_menu_abv_style_text_2.textContent = data_table_[3][2]
+    beer_menu_abv_style_text_3.textContent = data_table_[3][3]
+    beer_menu_abv_style_text_4.textContent = data_table_[3][4]
+    beer_menu_abv_style_text_5.textContent = data_table_[3][5]
+    beer_menu_abv_style_text_6.textContent = data_table_[3][6]
+    beer_menu_abv_style_text_7.textContent = data_table_[3][7]
+    beer_menu_abv_style_text_8.textContent = data_table_[3][8]
+    beer_menu_ibu_style_text_1.textContent = data_table_[4][1]
+    beer_menu_ibu_style_text_2.textContent = data_table_[4][2]
+    beer_menu_ibu_style_text_3.textContent = data_table_[4][3]
+    beer_menu_ibu_style_text_4.textContent = data_table_[4][4]
+    beer_menu_ibu_style_text_5.textContent = data_table_[4][5]
+    beer_menu_ibu_style_text_6.textContent = data_table_[4][6]
+    beer_menu_ibu_style_text_7.textContent = data_table_[4][7]
+    beer_menu_ibu_style_text_8.textContent = data_table_[4][8]
+    beer_menu_sqr_03_text_1.textContent = data_table_[5][1]
+    beer_menu_sqr_05_text_1.textContent = data_table_[6][1]
+    beer_menu_sqr_03_text_2.textContent = data_table_[5][2]
+    beer_menu_sqr_05_text_2.textContent = data_table_[6][2]
+    beer_menu_sqr_03_text_3.textContent = data_table_[5][3]
+    beer_menu_sqr_05_text_3.textContent = data_table_[6][3]
+    beer_menu_sqr_03_text_4.textContent = data_table_[5][4]
+    beer_menu_sqr_05_text_4.textContent = data_table_[6][4]
+    beer_menu_sqr_03_text_5.textContent = data_table_[5][5]
+    beer_menu_sqr_05_text_5.textContent = data_table_[6][5]
+    beer_menu_sqr_03_text_6.textContent = data_table_[5][6]
+    beer_menu_sqr_05_text_6.textContent = data_table_[6][6]
+    beer_menu_sqr_03_text_7.textContent = data_table_[5][7]
+    beer_menu_sqr_05_text_7.textContent = data_table_[6][7]
+    beer_menu_sqr_03_text_8.textContent = data_table_[5][8]
+    beer_menu_sqr_05_text_8.textContent = data_table_[6][8]
 }
-beer_table_data(data_table_)
+function table_template_name(data_table_){
+    return`
+                    <div class="beer_menu_sqr_name_column_1 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_1">${data_table_[0][0]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_2 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_2">${data_table_[0][1]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_3 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_3">${data_table_[0][2]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_4 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_4">${data_table_[0][3]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_5 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_5">${data_table_[0][4]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_6 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_6">${data_table_[0][5]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_7 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_7">${data_table_[0][6]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_name_column_8 beer_menu_sqr_name_column_">
+                        <p class="beer_menu_sqr_name_text" id="beer_menu_sqr_name_text_8">${data_table_[0][7]}</p>
+                        </div>
+    `
+}
+function table_template_brewery(data_table_){
+    return`
+                    <div class="beer_menu_sqr_brewery_column_1 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_1">${data_table_[1][0]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_2 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_2">${data_table_[1][1]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_3 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_3">${data_table_[1][2]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_4 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_4">${data_table_[1][3]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_5 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_5">${data_table_[1][4]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_6 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_6">${data_table_[1][5]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_7 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_7">${data_table_[1][6]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_brewery_column_8 beer_menu_sqr_brewery_column_">
+                        <p class="beer_menu_sqr_brewery_text" id="beer_menu_sqr_brewery_text_8">${data_table_[1][7]}</p>
+                        </div>
+    `
+}
+function table_template_style(data_table_){
+    return`
+                    <div class="beer_menu_sqr_style_column_1 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_1">${data_table_[2][0]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_2 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_2">${data_table_[2][1]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_3 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_3">${data_table_[2][2]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_4 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_4">${data_table_[2][3]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_5 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_5">${data_table_[2][4]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_6 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_6">${data_table_[2][5]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_7 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_7">${data_table_[2][6]}</p>
+                        </div>
+                    <div class="beer_menu_sqr_style_column_8 beer_menu_sqr_style_column_">
+                        <p class="beer_menu_sqr_style_text" id="beer_menu_sqr_style_text_8">${data_table_[2][7]}</p>
+                        </div>
+    `
+}
+function table_template_abv(data_table_){
+    return`
+                    <div class="beer_menu_abv_style_column_1 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_1">${data_table_[3][0]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_2 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_2">${data_table_[3][1]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_3 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_3">${data_table_[3][2]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_4 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_4">${data_table_[3][3]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_5 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_5">${data_table_[3][4]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_6 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_6">${data_table_[3][5]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_7 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_7">${data_table_[3][6]}</p>
+                        </div>
+                    <div class="beer_menu_abv_style_column_8 beer_menu_abv_style_column_">
+                        <p class="beer_menu_abv_style_text" id="beer_menu_abv_style_text_8">${data_table_[3][7]}</p>
+                        </div>
+    `
+}
+function table_template_ibu(data_table_){
+    return`
+                    <div class="beer_menu_ibu_style_column_1 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_1">${data_table_[4][0]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_2 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_2">${data_table_[4][1]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_3 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_3">${data_table_[4][2]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_4 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_4">${data_table_[4][3]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_5 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_5">${data_table_[4][4]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_6 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_6">${data_table_[4][5]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_7 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_7">${data_table_[4][6]}</p>
+                        </div>
+                    <div class="beer_menu_ibu_style_column_8 beer_menu_ibu_style_column_">
+                        <p class="beer_menu_ibu_style_text" id="beer_menu_ibu_style_text_8">${data_table_[4][7]}</p>
+                        </div>
+    `
+}
+function table_template_0305(data_table_){
+    return`
+    <div class="beer_menu_sqr_0305_column_1 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_1" >
+                            <p id="beer_menu_sqr_03_text_1">${data_table_[5][0]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_1">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_1" >
+                            <p id="beer_menu_sqr_05_text_1">${data_table_[6][0]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_2 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_2" >
+                            <p id="beer_menu_sqr_03_text_2">${data_table_[5][1]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_2">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_2" >
+                            <p id="beer_menu_sqr_05_text_2">${data_table_[6][1]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_3 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_3" >
+                            <p id="beer_menu_sqr_03_text_3">${data_table_[5][2]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_3">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_3" >
+                            <p id="beer_menu_sqr_05_text_3">${data_table_[6][2]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_4 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_4" >
+                            <p id="beer_menu_sqr_03_text_4">${data_table_[5][3]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_4">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_4" >
+                            <p id="beer_menu_sqr_05_text_4">${data_table_[6][3]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_5 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_5" >
+                            <p id="beer_menu_sqr_03_text_5">${data_table_[5][4]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_5">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_5" >
+                            <p id="beer_menu_sqr_05_text_5">${data_table_[6][4]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_6 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_6" >
+                            <p id="beer_menu_sqr_03_text_6">${data_table_[5][5]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_6">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_6" >
+                            <p id="beer_menu_sqr_05_text_6">${data_table_[6][5]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_7 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_7" >
+                            <p id="beer_menu_sqr_03_text_7">${data_table_[5][6]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_7">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_7" >
+                            <p id="beer_menu_sqr_05_text_7">${data_table_[6][6]}</p>
+                        </div>
+                        </div>
+                    <div class="beer_menu_sqr_0305_column_8 beer_menu_sqr_0305_column_">
+                        <div class="beer_menu_sqr_03_text beer_menu_sqr_03_text_8" >
+                            <p id="beer_menu_sqr_03_text_8">${data_table_[5][7]}</p>
+                        </div>
+                        <div class="beer_menu_sqr_00_text beer_menu_sqr_00_text_8">———</div>
+                        <div class="beer_menu_sqr_05_text beer_menu_sqr_05_text_8" >
+                            <p id="beer_menu_sqr_05_text_8">${data_table_[6][7]}</p>
+                        </div>
+                        </div>
+    `
+}
+
+function build_table(data_table_){
+    if( typeof(data_table_)==="object"){
+        beer_menu_sqr_name_column.insertAdjacentHTML('beforeend', table_template_name(data_table_))
+        beer_menu_sqr_brewery_column.insertAdjacentHTML('beforeend', table_template_brewery(data_table_))
+        beer_menu_sqr_style_column.insertAdjacentHTML('beforeend', table_template_style(data_table_))
+        beer_menu_abv_style_column.insertAdjacentHTML('beforeend', table_template_abv(data_table_))
+        beer_menu_ibu_style_column.insertAdjacentHTML('beforeend', table_template_ibu(data_table_))
+        beer_menu_sqr_0305_column.insertAdjacentHTML('beforeend', table_template_0305(data_table_))
+    }
+}
+
+// beer_table_data(data_table_)
 function beer_table(){
     if(open_state === false){
         open_state = !open_state
@@ -267,3 +496,4 @@ function beer_table(){
         return
     }
 }
+console.log('3')

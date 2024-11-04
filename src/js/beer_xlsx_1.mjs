@@ -68,6 +68,7 @@ sessionStorage.setItem("data_columnF_tab_out", data_columnF_tab)
 sessionStorage.setItem("data_columnG_tab_out", data_columnG_tab)
 sessionStorage.setItem("data_columnH_tab_out", data_columnH_tab)
 
+console.log('2')
 // console.log(data_columnA_tab)
 // console.log(data_columnB_tab)
 // console.log(data_columnC_tab)

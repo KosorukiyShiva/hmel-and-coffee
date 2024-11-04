@@ -49,7 +49,7 @@ var data_xlsx_ = [data_columnA_xlsx_outter , data_columnB_xlsx_outter , data_col
 var quantity_of_position_outter_ = quantity_of_position_outter
 
 function build_card(data_xlsx_, i){
-    console.log(i)
+    // console.log(i)
     if((typeof(i)==="number")&&(typeof(data_xlsx_)==="object")){
         for (let index = 0; index < i; index++) {
             // console.log(index + 'a')
@@ -58,7 +58,7 @@ function build_card(data_xlsx_, i){
         }
     }
     else{
-        console.log("wrong type of data")
+        // console.log("wrong type of data")
         return
     }
 
@@ -68,20 +68,24 @@ function card_template(data_xlsx_ , index) {
     // console.log(index + 'b')
     return `
     <div class="beer_cards_card">
-        <img src="${data_xlsx_[9][index]}" alt="${data_xlsx_[9][index]}" class="beer_cards_card_img ${data_xlsx_[0][index] =='+' ? 'beer_card_available' : 'beer_card_unavailable'}" ></img>
-        <div class="beer_cards_card_text">
-            <div>-----------------</div>
-            <p class="beer_cards_card_text_table_point">название:${data_xlsx_[1][index]}</p>
-            <p class="beer_cards_card_text_table_point">пивоварня:${data_xlsx_[2][index]}</p>
-            <p class="beer_cards_card_text_table_point">крепость:${data_xlsx_[3][index]}</p>
-            <p class="beer_cards_card_text_table_point">объем:${data_xlsx_[4][index]}л</p>
-            <p class="beer_cards_card_text_table_point">тип:${data_xlsx_[5][index]}</p>
-            <p class="beer_cards_card_text_table_point">IBU:${data_xlsx_[6][index]}</p>
-            <p class="beer_cards_card_text_table_point">плотность:${data_xlsx_[7][index]}</p>
-            <p class="beer_cards_card_text_table_point beer_cards_card_text_table_point_price">стоимость:${data_xlsx_[8][index]} руб</p>
-            <div class="beer_cards_card_text_btm_line">-----------------</div>
-            <div class="beer_cards_card_text_btm">хмель&кофе</div>                    
+                <div class="beer_cards_card_image_box">
+                    <img src="${data_xlsx_[9][index]}" alt="${data_xlsx_[9][index]}" class="beer_cards_card_img ${data_xlsx_[0][index] =='+' ? 'beer_card_available' : 'beer_card_unavailable'}" ></img>
+                    <img src="/src/img/png/product/unavalible.png" alt="/src/img/png/product/unavalible.png" class="beer_cards_card_unavalible_img ${data_xlsx_[0][index] =='+' ? 'beer_cards_card_available' : 'beer_cards_card_unavailable'}" ></img>
+                </div>
+                <div class="beer_cards_card_text">
+                    <div>-----------------</div>
+                    <p class="beer_cards_card_text_table_point">название:${data_xlsx_[1][index]}</p>
+                    <p class="beer_cards_card_text_table_point">пивоварня:${data_xlsx_[2][index]}</p>
+                    <p class="beer_cards_card_text_table_point">крепость:${data_xlsx_[3][index]}</p>
+                    <p class="beer_cards_card_text_table_point">объем:${data_xlsx_[4][index]}л</p>
+                    <p class="beer_cards_card_text_table_point">тип:${data_xlsx_[5][index]}</p>
+                    <p class="beer_cards_card_text_table_point">IBU:${data_xlsx_[6][index]}</p>
+                    <p class="beer_cards_card_text_table_point">плотность:${data_xlsx_[7][index]}</p>
+                    <p class="beer_cards_card_text_table_point beer_cards_card_text_table_point_price">стоимость:${data_xlsx_[8][index]} руб</p>
+                    <div class="beer_cards_card_text_btm_line">-----------------</div>
+                    <div class="beer_cards_card_text_btm">хмель&кофе</div>                    
+                </div>
         </div>
-    </div>
     `
 }
+console.log('4')

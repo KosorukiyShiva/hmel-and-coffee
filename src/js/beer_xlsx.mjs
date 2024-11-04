@@ -7,7 +7,7 @@
 import * as XLSX from 'https://unpkg.com/xlsx/xlsx.mjs';
 
 
-const url = "http://192.168.0.102:5500/src/data/table.xlsx";
+const url = "http://127.0.0.1:5500/src/data/table.xlsx";
 const workbook = XLSX.read(await (await fetch(url)).arrayBuffer());
 const worksheet = workbook.Sheets[workbook.SheetNames[1]];
 
@@ -55,6 +55,7 @@ sessionStorage.setItem("data_columnH_xlsx_out", data_columnH_xlsx);
 sessionStorage.setItem("data_columnI_xlsx_out", data_columnI_xlsx);
 sessionStorage.setItem("data_columnJ_xlsx_out", data_columnJ_xlsx);
 
+console.log('1')
 
 // console.log(data_xlsx)
 // sessionStorage.setItem("data_xlsx_out", data_xlsx[0])

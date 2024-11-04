@@ -73,6 +73,7 @@ if((windowInnerWidth >= 870) && (windowInnerWidth < 1040)){
 
 // beer_cards.insertAdjacentHTML('beforeend',card_template(data_xlsx_ , index))
 build_card(data_xlsx_, quantity_of_position_outter)    
+build_table(data_table_)
+table_style(windowInnerWidth)
 
-
-
+console.log('10')
