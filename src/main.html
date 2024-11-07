@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="/src/css/normalize.css">
     <link rel="stylesheet" href="/src/css/reset.css">
     <meta name="discription" content="Бар «Хмель & Кофе» — это уютное место, где можно насладиться крафтовым пивом и кофе. Здесь есть восемь кранов с разливным пивом и три холодильника с бутылочным.">
+    <script type="module" src="/src/js/beer_xlsx_1.mjs" defer></script>
+    <script type="module" src="/src/js/poster_xlsx.mjs" defer></script>
     <script src="/src/js/getter.js"></script>
     <script src="/src/js/scripts.js" defer></script>
     <script src="/src/js/carousel.js" defer></script>
     <script src="/src/js/carousel1.js" defer></script>
     <script src="/src/js/coffe_menu.js" defer></script>
-    <script type="module" src="/src/js/beer_xlsx_1.mjs" defer></script>
     <script src="/src/js/beer_table_func.js"></script>
     <script src="/src/js/beer_table.js" defer></script>
     <script src="/src/js/poster.js" defer></script>
+    <script src="/src/js/poster_func.js" defer></script>
     <script src="/src/js/map.js" defer></script>
     <script src="/src/js/vizitka.js" defer></script>
     <script src="/src/js/main_page.js" defer></script>
@@ -203,7 +205,7 @@
                         <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_6" id="beer_menu_sqr_lines_vertical_6"></div>
                     </div>
                 </div>
-                <div class="beer_menu_sqr_snack" id="beer_menu_sqr_snack">
+                <!-- 
                     <div class="beer_menu_sqr_snack_head" id="beer_menu_sqr_snack_head">ЗАКУСКИ</div>
                     <div class="beer_menu_sqr_snack_parent" id="beer_menu_sqr_snack_parent">
                         <div class="beer_menu_sqr_snack_child beer_menu_sqr_snack_child_1" id="beer_menu_sqr_snack_child_1">
@@ -291,7 +293,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <button class="beer_menu_sqr_button" id="beer_menu_sqr_button" onclick="beer_table()">
                     <a href="/src/beer.html">
                         <span class="coffe_menu_sqr_sirops_text" id="coffe_menu_sqr_sirops_text">↓крафтовое пиво↓</span>
@@ -306,10 +308,11 @@
             <div class="poster_block_scroller" id="poster_block_scroller">
                 <div class="poster_block_scroller_sqr" id="poster_block_scroller_sqr">
                     <div class="poster_block_scroller_sqr_block_0 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_0">
-                        <div class="poster_block_scroller_sqr_block_0_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_0_text">НХЛ Филадельфия-Бостон регулярный чемпионат 20:00 23.03.2024</div>
+                        <div class="poster_block_scroller_sqr_block_0_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_0_text">
+                        </div>
                     </div>
                     <div class="poster_block_scroller_sqr_block_1 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_1">
-                        <div class="poster_block_scroller_sqr_block_1_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_1_text">НХЛ Бостон-Лос-Анджелес регулярный чемпионат 20:30 17.02.2024</div>
+                        <div class="poster_block_scroller_sqr_block_1_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_1_text"></div>
                     </div>
                     <div class="poster_block_scroller_sqr_block_2 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_2">
                         <div class="poster_block_scroller_sqr_block_2_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_2_text"></div>

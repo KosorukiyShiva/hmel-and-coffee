@@ -11,4 +11,3 @@ vizitka_sqr_by.style.left = `${(prcnt_windowInnerWidth * 95.8-8 - 174)/2}px`
 vizitka_sqr_by_name.style.left = `${(prcnt_windowInnerWidth * 95.8-8 - 120)/2}px`
 vizitka_sqr_contact.style.left = `${(prcnt_windowInnerWidth * 95.8-8 - 100)/2}px`
 vizitka_sqr_contact_info.style.left = `${(prcnt_windowInnerWidth * 95.8-8 - 350)/2}px`
-console.log('9')

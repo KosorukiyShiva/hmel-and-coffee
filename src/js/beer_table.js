@@ -101,5 +101,3 @@ function table_style(windowInnerWidth){
         beer_menu_sqr_lines_vertical_4.style.left =  `${prcnt_windowInnerWidth * 76.4}px`
     }
 }
-
-console.log('8')

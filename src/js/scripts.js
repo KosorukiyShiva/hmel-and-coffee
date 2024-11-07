@@ -38,7 +38,6 @@ function render(val) {
     icon_menu_coffee.style.opacity = 0
     icon_menu_beer.style.opacity = 0
     icon_menu_poster.style.opacity = 0
-    console.log(windowInnerWidth)
     box_menu_text.style.width = `${(windowInnerWidth)}px`
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
 
@@ -192,4 +191,3 @@ window.addEventListener('scroll', function () {
         icon_menu_beer.style.opacity = 0
     }
 });
-console.log('5')

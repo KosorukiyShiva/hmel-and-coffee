@@ -496,4 +496,3 @@ function beer_table(){
         return
     }
 }
-console.log('3')
