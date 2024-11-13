@@ -27,7 +27,7 @@ const icon_menu_poster = document.getElementById('box_menu_column_left_afisha_ic
 const box_menu_text = document.getElementById('box_menu_textid')
 box_menu_text.style.width = `${windowInnerWidth}px`
 
-size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight
+// size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight
 
 __main__.style.width = `${windowInnerWidth}px`
 function render(val) {
@@ -38,11 +38,10 @@ function render(val) {
     icon_menu_coffee.style.opacity = 0
     icon_menu_beer.style.opacity = 0
     icon_menu_poster.style.opacity = 0
-    console.log(windowInnerWidth)
     box_menu_text.style.width = `${(windowInnerWidth)}px`
     // lines_box.style.width=`${half_windowInnerWidth + 172}px`
 
-    size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
+    // size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight 
 }
  render(windowInnerWidth)
 
@@ -53,8 +52,9 @@ window.addEventListener('scroll', function () {
     // console.log(prcnt_windowInnerHeight)
     // console.log(prcnt_windowInnerHeight*scrollPosition)
     // console.log(_prcnt_beer_line)
-    console.log(scrollPosition);
-    console.log(scrollPosition/windowInnerHeight *100)
+    
+    // console.log(scrollPosition);
+    // console.log(scrollPosition/windowInnerHeight *100)
 
     //коэффициенты для линий
     const coef_coffee_line = (half_windowInnerWidth + 86)/(prcnt_windowInnerHeight*26.8) 

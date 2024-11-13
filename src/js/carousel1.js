@@ -45,3 +45,4 @@ slides_img_81.style.flexBasis = `${prcnt_windowInnerWidth*62}px`
 slides_img_81.style.height = `${prcnt_windowInnerHeight*43}px`
 slides_img_91.style.flexBasis = `${prcnt_windowInnerWidth*62}px`
 slides_img_91.style.height = `${prcnt_windowInnerHeight*43}px`
+console.log('7')
