@@ -89,13 +89,13 @@ function table_style(windowInnerWidth){
         beer_menu_sqr_lines_vertical_6.style.opacity = 0
 
         beer_menu_sqr_name_column.style.width = `${prcnt_windowInnerWidth*24.2}px`
-        beer_menu_sqr_brewery_column.style.width = `${prcnt_windowInnerWidth*21.8}px`
+        beer_menu_sqr_brewery_column.style.width = `${prcnt_windowInnerWidth*22.8}px`
         beer_menu_sqr_style_column.style.width = `${prcnt_windowInnerWidth*21.8}px`
     
-        beer_menu_sqr_name_column.style.left = `${38}px`
-        beer_menu_sqr_brewery_column.style.left = `${38 + (prcnt_windowInnerWidth * 24.2) + 8}px`
-        beer_menu_sqr_style_column.style.left = `${38 + (prcnt_windowInnerWidth * 24.2) + 8 + (prcnt_windowInnerWidth*21.8) + 8}px`
-        beer_menu_sqr_0305_column.style.left =  `${38 + (prcnt_windowInnerWidth * 24.2) + 8 + (prcnt_windowInnerWidth*21.8) + 8 + (prcnt_windowInnerWidth*21.8) }px`
+        beer_menu_sqr_name_column.style.left = `${32}px`
+        beer_menu_sqr_brewery_column.style.left = `${32 + (prcnt_windowInnerWidth * 24.2)}px`
+        beer_menu_sqr_style_column.style.left = `${32 + (prcnt_windowInnerWidth * 24.2) + 4 + (prcnt_windowInnerWidth*22.8)}px`
+        beer_menu_sqr_0305_column.style.left =  `${32 + (prcnt_windowInnerWidth * 24.2) + 4 + (prcnt_windowInnerWidth*22.8) + 4 +(prcnt_windowInnerWidth*21.8) }px`
         beer_menu_sqr_lines_vertical_2.style.left = `${prcnt_windowInnerWidth * 29.6}px`
         beer_menu_sqr_lines_vertical_3.style.left = `${prcnt_windowInnerWidth * 53.4}px`
         beer_menu_sqr_lines_vertical_4.style.left =  `${prcnt_windowInnerWidth * 76.4}px`

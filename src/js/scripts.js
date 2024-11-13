@@ -25,7 +25,7 @@ const icon_menu_poster = document.getElementById('box_menu_column_left_afisha_ic
 
 
 const box_menu_text = document.getElementById('box_menu_textid')
-box_menu_text.style.width = `${windowInnerWidth}px`
+// box_menu_text.style.width = `${windowInnerWidth}px`
 
 // size_debug.textContent = windowInnerWidth + 'x' + windowInnerHeight
 

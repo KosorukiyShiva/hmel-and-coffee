@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,135 +7,52 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/normalize.css">
     <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style_beer.css">
     <meta name="discription" content="Бар «Хмель & Кофе» — это уютное место, где можно насладиться крафтовым пивом и кофе. Здесь есть восемь кранов с разливным пивом и три холодильника с бутылочным.">
-    <script type="module" src="/src/js/beer_xlsx_1.mjs" defer></script>
-    <script type="module" src="/src/js/poster_xlsx.mjs" defer></script>
     <script src="/src/js/getter.js"></script>
-    <script src="/src/js/scripts.js" defer></script>
-    <script src="/src/js/carousel.js" defer></script>
-    <script src="/src/js/carousel1.js" defer></script>
-    <script src="/src/js/coffe_menu.js" defer></script>
+    <script type="module" src="/src/js/beer_xlsx.mjs" defer></script>
+    <script type="module" src="/src/js/beer_xlsx_1.mjs" defer></script>
     <script src="/src/js/beer_table_func.js"></script>
+    <script src="/src/js/beer_cards_func.js"></script>
+    <script src="/src/js/scripts.js" defer></script>
+    <!-- <script src="/src/js/carousel.js" defer></script> -->
+    <!-- <script src="/src/js/carousel1.js" defer></script> -->
+    <!-- <script src="/src/js/coffe_menu.js" defer></script> -->
     <script src="/src/js/beer_table.js" defer></script>
-    <script src="/src/js/poster.js" defer></script>
-    <script src="/src/js/poster_func.js" defer></script>
-    <script src="/src/js/map.js" defer></script>
+    <!-- <script src="/src/js/poster.js" defer></script> -->
+    <!-- <script src="/src/js/map.js" defer></script> -->
     <script src="/src/js/vizitka.js" defer></script>
-    <script src="/src/js/main_page.js" defer></script>
+    <script src="/src/js/beer_page.js" defer></script>
 </head>
 <body class="__main__" id="__main__">
     <header>
         <div class="box_menu" id="box_menu">
             <div class="box_menu_column box_menu_column_left">
-                <a href="/src/map.html">
+                <a href="/map.html">
                     <img src="/src/icons/map_white.svg" alt="/src/icons/map_black.svg" class="box_menu_column_left_map_icon">
                 </a>
-                <a href="/src/page_poster.html">
+                <a href="/page_poster.html">
                     <img  src="/src/icons/calendar_white.svg" alt="/src/icons/calendar_black.svg"class="box_menu_column_left_afisha_icon" id="box_menu_column_left_afisha_icon">
                 </a>
             </div>
             <div class="box_menu_column box_menu_column_right">
-                <a href="/src/coffee.html">
+                <a href="/coffee.html">
                     <img  src="/src/icons/coffee_white.svg" alt="/src/icons/coffee_black.svg.svg"class="box_menu_column_right_coffee_icon" id="box_menu_column_right_coffee_icon">
                 </a>
-                <a href="/src/beer.html">
+                <a href="/beer.html">
                     <img  src="/src/icons/hmel_white.svg" alt="/src/icons/hmel_black.svg"class="box_menu_column_right_hmel_icon" id="box_menu_column_right_hmel_icon">
                 </a>
             </div>
             <div class="box_menu_column_middle">
-                <img  src="/src/icons/logo_b_white.svg" alt="/src/icons/logo_b_black.svg"class="box_menu_main_logo_icon">
+                <a href="/index.html">
+                    <img  src="/src/icons/logo_b_white.svg" alt="/src/icons/logo_b_black.svg"class="box_menu_main_logo_icon">
+                </a>
             </div>
         </div>
-        <!-- <h1 class="size_debug" id="size_debug"></h1> -->
+        <h1 class="size_debug" id="size_debug"></h1>
     </header>
-    <nav>
-        <div class="box_menu_text" id="box_menu_textid">
-            <div class="box_menu_text_icons" id="box_menu_text_icons">
-                <img  src="/src/icons/coffee_white.svg" alt="/src/icons/coffee_black.svg.svg" class="box_menu_text_icons_coffee_icon box_menu_column_right_coffee_icon" id="box_menu_text_icons_coffee_icon">
-                <img  src="/src/icons/hmel_white.svg" alt="/src/icons/hmel_black.svg" class="box_menu_text_icons_hmel_icon box_menu_column_right_hmel_icon" id="box_menu_text_icons_hmel_icon">
-                <img  src="/src/icons/calendar_white.svg" alt="/src/icons/calendar_black.svg" class="box_menu_text_icons_afisha_icon box_menu_column_left_afisha_icon" id="box_menu_text_icons_afisha_icon">
-            </div>
-            <a href="/src/coffee.html">
-                <h1 class="box_menu_text_coffee __h1" id="box_menu_text_coffee">
-                КОФЕ
-                </h1>
-            </a>
-            <div id="box_menu_text_coffee_line" class="box_menu_text_coffee_line box_menu_text_line" ></div>
-            <a href="/src/beer.html">
-                <h1 class="box_menu_text_beer __h1" id="box_menu_text_beer">
-                    ПИВО
-                </h1>
-            </a>
-            <div id="box_menu_text_beer_line" class="box_menu_text_beer_line box_menu_text_line"></div>
-            <a href="/src/page_poster.html">
-                <h1 class="box_menu_text_poster __h1" id="box_menu_text_poster">
-                    АФИША
-                </h1>
-            </a>
-            <div id="box_menu_text_poster_line" class="box_menu_text_poster_line box_menu_text_line"></div>
-        </div>
-    </nav>
+    <nav></nav>
     <main>
-        <div class="carousel" id="carousel_block">
-            <div class="slides_carousel" id="slides_carousel">
-                <div class="slides_img slides_img_0" id="slides_img_0"></div>
-                <div class="slides_img slides_img_1" id="slides_img_1"></div>
-                <div class="slides_img slides_img_2" id="slides_img_2"></div>
-            </div>
-        </div>
-        <div class="coffe_menu" id="coffe_menu">
-            <div class="coffe_menu_head" id="coffe_menu_head"></div>
-            <div class="coffe_menu_sqr" id="coffe_menu_sqr">
-                <div class="coffe_menu_sqr_left" id="coffe_menu_sqr_left">
-                    <ul>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_1">ДОППИО....................</span>
-                            <span class="coffe_menu_sqr_price">120</span>
-                            <div class="coffe_menu_sqr_text_block_dotes"></div>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_2">АМЕРИКАНО............</span>
-                            <span class="coffe_menu_sqr_price">120</span>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_3">ФЛЭТ УАЙТ............</span>
-                            <span class="coffe_menu_sqr_price">200</span>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_4">КАПУЧИНО............</span>
-                            <span class="coffe_menu_sqr_price">150/200</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="coffe_menu_sqr_line" id="coffe_menu_sqr_line"></div>
-                <div class="coffe_menu_sqr_right" id="coffe_menu_sqr_right">
-                    <ul>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_5">ЛАТТЕ....................</span>
-                            <span class="coffe_menu_sqr_price">200</span>
-                            <div class="coffe_menu_sqr_text_block_dotes"></div>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_6">РАФ..........................</span>
-                            <span class="coffe_menu_sqr_price">250</span>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_7">КАКАО............................</span>
-                            <span class="coffe_menu_sqr_price">200</span>
-                        </li>
-                        <li class="coffe_menu_sqr_text_block">
-                            <span class="coffe_menu_sqr_text" id="coffe_menu_sqr_text_8">ЧАЙ...........................</span>
-                            <span class="coffe_menu_sqr_price">150</span>
-                        </li>
-                    </ul>
-                </div>
-                <button class="coffe_menu_sqr_sirops" id="coffe_menu_sqr_sirops">
-                    <a href="/src/coffee.html">
-                        <span class="coffe_menu_sqr_sirops_text">СИРОПЫ</span>
-                    </a>
-                </button>
-            </div>
-        </div>
         <div class="beer_menu" id="beer_menu">
             <div class="beer_menu_head" id="beer_menu_head"></div>
             <div class="beer_menu_sqr" id="beer_menu_sqr">
@@ -205,7 +122,7 @@
                         <div class="beer_menu_sqr_lines_vertical beer_menu_sqr_lines_vertical_6" id="beer_menu_sqr_lines_vertical_6"></div>
                     </div>
                 </div>
-                <!-- 
+                <div class="beer_menu_sqr_snack" id="beer_menu_sqr_snack">
                     <div class="beer_menu_sqr_snack_head" id="beer_menu_sqr_snack_head">ЗАКУСКИ</div>
                     <div class="beer_menu_sqr_snack_parent" id="beer_menu_sqr_snack_parent">
                         <div class="beer_menu_sqr_snack_child beer_menu_sqr_snack_child_1" id="beer_menu_sqr_snack_child_1">
@@ -293,110 +210,55 @@
                             </ul>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <button class="beer_menu_sqr_button" id="beer_menu_sqr_button" onclick="beer_table()">
-                    <a href="/src/beer.html">
-                        <span class="coffe_menu_sqr_sirops_text" id="coffe_menu_sqr_sirops_text">↓крафтовое пиво↓</span>
-                    </a>
+                    <span class="coffe_menu_sqr_sirops_text" id="coffe_menu_sqr_sirops_text">↓к пиву↓</span>
                 </button>
             </div>
         </div>
-        <div class="poster_block" id="poster_block">
-            <div class="poster_block_banner" id="poster_block_banner">
-                <div class="poster_block_banner_text" id="poster_block_banner_text">АФИША СОБЫТИЙ</div>
-            </div>
-            <div class="poster_block_scroller" id="poster_block_scroller">
-                <div class="poster_block_scroller_sqr" id="poster_block_scroller_sqr">
-                    <div class="poster_block_scroller_sqr_block_0 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_0">
-                        <div class="poster_block_scroller_sqr_block_0_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_0_text">
-                        </div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_1 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_1">
-                        <div class="poster_block_scroller_sqr_block_1_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_1_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_2 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_2">
-                        <div class="poster_block_scroller_sqr_block_2_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_2_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_3 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_3">
-                        <div class="poster_block_scroller_sqr_block_3_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_3_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_4 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_4">
-                        <div class="poster_block_scroller_sqr_block_4_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_4_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_5 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_5">
-                        <div class="poster_block_scroller_sqr_block_5_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_5_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_6 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_6">
-                        <div class="poster_block_scroller_sqr_block_6_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_6_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_7 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_7">
-                        <div class="poster_block_scroller_sqr_block_7_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_7_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_8 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_8">
-                        <div class="poster_block_scroller_sqr_block_8_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_8_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_9 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_9">
-                        <div class="poster_block_scroller_sqr_block_9_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_9_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_10 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_10">
-                        <div class="poster_block_scroller_sqr_block_10_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_10_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_11 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_11">
-                        <div class="poster_block_scroller_sqr_block_11_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_11_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_12 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_12">
-                        <div class="poster_block_scroller_sqr_block_12_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_12_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_13 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_13">
-                        <div class="poster_block_scroller_sqr_block_13_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_13_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_14 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_14">
-                        <div class="poster_block_scroller_sqr_block_14_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_14_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_15 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_15">
-                        <div class="poster_block_scroller_sqr_block_15_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_15_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_16 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_16">
-                        <div class="poster_block_scroller_sqr_block_16_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_16_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_17 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_17">
-                        <div class="poster_block_scroller_sqr_block_17_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_17_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_18 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_18">
-                        <div class="poster_block_scroller_sqr_block_18_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_18_text"></div>
-                    </div>
-                    <div class="poster_block_scroller_sqr_block_19 poster_block_scroller_sqr_block_" id="poster_block_scroller_sqr_block_19">
-                        <div class="poster_block_scroller_sqr_block_19_text poster_block_scroller_sqr_block_text" id="poster_block_scroller_sqr_block_19_text"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="beer_cards" id="beer_cards" >
+            
         </div>
-        <div class="carousel" id="carousel_block1">
-            <div class="slides_carousel" id="slides_carousel1">
-                <div class="slides_img slides_img_01" id="slides_img_01"></div>
-                <div class="slides_img slides_img_11" id="slides_img_11"></div>
-                <div class="slides_img slides_img_21" id="slides_img_21"></div>
-            </div>
-        </div>
-        <div class="map" id="map">
-            <div class="map_sqr" id="map_sqr">
-                <div class="map_sqr_head_text" id="map_sqr_head_text">ГДЕ НАС НАЙТИ:</div>
-                <div class="map_sqr_map" id="map_sqr_map">
-                </div>
-                <div class="map_sqr_text_adress" id="map_sqr_text_adress">Москва, Зеленоград, Новокрюковская улица, 7.</div>
-                <div class="map_sqr_phone_icon" id="map_sqr_phone_icon"><img src="/src/icons/telefon.svg" alt="/src/icons/telefon.svg"></div>
-                <div class="map_sqr_phone_num" id="map_sqr_phone_num">+7 (925) 176-62-52</div>
-            </div>
-        </div>
+    </main>
+    <footer>
         <div class="vizitka" id="vizitka">
             <div class="vizitka_sqr" id="vizitka_sqr">
                 <div class="vizitka_sqr_by" id="vizitka_sqr_by">Сайт разработан:</div>
                 <div class="vizitka_sqr_by_name" id="vizitka_sqr_by_name">Ивлев А.В.</div>
                 <div class="vizitka_sqr_contact" id="vizitka_sqr_contact">Контакты:</div>
-                <div class="vizitka_sqr_contact_info" id="vizitka_sqr_contact_info">alcatelandry8@gmail.com </div>
+                <div class="vizitka_sqr_contact_info" id="vizitka_sqr_contact_info">alcatelandry8@gmail.com     Telegram:@KosorukiyShiva</div>
             </div>
         </div>
-    </main>
-    <footer></footer>    
+    </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+ -->

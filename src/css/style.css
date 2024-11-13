@@ -418,6 +418,7 @@ a{
         font-size: 20px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_sqr_number_column_N{
@@ -442,7 +443,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
-        /* background-color: grey; */
+        /* background-color: aquamarine; */
     }
     .beer_menu_sqr_name_column_{
         height: 35px;
@@ -464,6 +465,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_sqr_brewery_column_{
@@ -486,6 +488,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_sqr_style_column_{
@@ -508,6 +511,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_abv_style_column_{
@@ -530,6 +534,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_ibu_style_column_{
@@ -553,6 +558,7 @@ a{
         font-size: 12px;
         font-family: Chalkduster;
         color: #FFFFFF;
+        /* background-color: aquamarine; */
         /* background-color: grey; */
     }
     .beer_menu_sqr_0305_column_{
