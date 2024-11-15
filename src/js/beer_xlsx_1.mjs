@@ -76,33 +76,3 @@ sessionStorage.setItem("data_columnH_tab_out", data_columnH_tab)
 // console.log(data_columnF_tab)
 // console.log(data_columnG_tab)
 // console.log(data_columnH_tab)
-
-// for(let i = 1; i <=quantity_of_position_tab[1]; i++){
-//     data_columnA_tab[i-1] = worksheet_tab['A' + i];
-//     if(typeof(worksheet_tab['A' + i]) == 'undefined'){
-//         counter_of_positions[ worksheet_tab['A' + i] - 1] = 0;
-//     }
-//     if( worksheet_tab['A' + i] <9){
-//         counter_of_positions[ worksheet_tab['A' + i] - 1]++;
-//     }
-//     else if(counter_of_positions[ worksheet_tab['A' + i] - 1] > 1){
-//         console.log('error in format of table')
-//         state_of_aquaring = false
-//         // return
-//     }
-//     // else{
-//     //     console.log('error in format of table')
-//     //     state_of_aquaring = false
-//     //     // return 
-//     // }
-//     state_of_aquaring = true
-// }
-// // console.log
-// if(state_of_aquaring === true){
-//     // counter_of_positions теперь будет хранит в себе индексы строк необходимых кранов
-//     for (let i = 0; i < 8; i++) {
-//         counter_of_positions[i] = counter_of_positions.indexOf(i+1)
-//     }
-//     console.log(counter_of_positions)
-// }
-

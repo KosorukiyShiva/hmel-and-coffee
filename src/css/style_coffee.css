@@ -274,7 +274,7 @@ a{
         position: absolute;
         width: 125px;
         height: 270px;
-        top: 27px;
+        top: 100px;
         left: 240px;
         /* margin: 0 auto -10px; */
         z-index: 3;
@@ -333,7 +333,7 @@ a{
     .vizitka_sqr_contact_info{
         position: absolute;
         top: 125px;
-        width: 350px;
+        width: 300px;
         font-family: Chalkduster;
         text-align: center;
         color: #FFFFFF;

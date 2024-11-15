@@ -551,7 +551,7 @@ a{
         /* opacity: 0; */
         z-index: 3;
         position: absolute;
-        top: 45px;
+        top: 30px;
         left: 331px;
         width: 50px;
         height: 297px;
@@ -644,7 +644,7 @@ a{
         top: 374px;
         background-color: #1D1D1D;
         height: 60px;
-        width: 346px;
+        width: 306px;
         border-radius: 28px;
         border: #FFFFFF solid 4px;
     }
@@ -782,7 +782,7 @@ a{
         position: absolute;
         top: 480px;
         left: 77px;
-        width: 302px;
+        width: 250px;
         height: 60px;
         font-size: 24px;
         font-family: Chalkduster;
@@ -841,7 +841,7 @@ a{
     .vizitka_sqr_contact_info{
         position: absolute;
         top: 125px;
-        width: 350px;
+        width: 300px;
         font-family: Chalkduster;
         text-align: center;
         color: #FFFFFF;

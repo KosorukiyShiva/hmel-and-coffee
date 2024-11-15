@@ -47,7 +47,7 @@ beer_menu_sqr_lines.style.left = `${adapt_coeff}px`
 beer_menu.style.width = `${prcnt_windowInnerWidth * 95.8}px`
 beer_menu_head.style.left = `${(prcnt_windowInnerWidth * 95.8 - 177) / 2}px`
 beer_menu_sqr.style.width = `${prcnt_windowInnerWidth * 95.8-8}px`
-beer_menu_sqr_button.style.left = `${(prcnt_windowInnerWidth * 95.8 - 8 - 346)/2}px`
+beer_menu_sqr_button.style.left = `${(prcnt_windowInnerWidth * 95.8 - 8 - 306)/2}px`
 function table_style(windowInnerWidth){
     if (windowInnerWidth >= 500) {
     
@@ -91,13 +91,19 @@ function table_style(windowInnerWidth){
         beer_menu_sqr_name_column.style.width = `${prcnt_windowInnerWidth*24.2}px`
         beer_menu_sqr_brewery_column.style.width = `${prcnt_windowInnerWidth*22.8}px`
         beer_menu_sqr_style_column.style.width = `${prcnt_windowInnerWidth*21.8}px`
-    
-        beer_menu_sqr_name_column.style.left = `${32}px`
-        beer_menu_sqr_brewery_column.style.left = `${32 + (prcnt_windowInnerWidth * 24.2)}px`
-        beer_menu_sqr_style_column.style.left = `${32 + (prcnt_windowInnerWidth * 24.2) + 4 + (prcnt_windowInnerWidth*22.8)}px`
-        beer_menu_sqr_0305_column.style.left =  `${32 + (prcnt_windowInnerWidth * 24.2) + 4 + (prcnt_windowInnerWidth*22.8) + 4 +(prcnt_windowInnerWidth*21.8) }px`
-        beer_menu_sqr_lines_vertical_2.style.left = `${prcnt_windowInnerWidth * 29.6}px`
-        beer_menu_sqr_lines_vertical_3.style.left = `${prcnt_windowInnerWidth * 53.4}px`
-        beer_menu_sqr_lines_vertical_4.style.left =  `${prcnt_windowInnerWidth * 76.4}px`
+        
+        console.log(adapt_coeff)
+
+        beer_menu_sqr_number_column.style.left = `${adapt_coeff}px`
+        beer_menu_sqr_name_column.style.left = `${adapt_coeff + 24}px`
+        beer_menu_sqr_brewery_column.style.left = `${adapt_coeff + 24 + (prcnt_windowInnerWidth * 24.2) + 2}px`
+        beer_menu_sqr_style_column.style.left = `${adapt_coeff + 24 + (prcnt_windowInnerWidth * 24.2) + 2 + (prcnt_windowInnerWidth*22.8) + 2}px`
+        beer_menu_sqr_0305_column.style.left =  `${adapt_coeff + 24 + (prcnt_windowInnerWidth * 24.2) + 2 + (prcnt_windowInnerWidth*22.8) + 2 + (prcnt_windowInnerWidth*21.8) + 2}px`
+        beer_menu_sqr_lines_vertical_2.style.left = `${24 + (prcnt_windowInnerWidth * 24.2) - 2}px`
+        beer_menu_sqr_lines_vertical_3.style.left = `${24 + (prcnt_windowInnerWidth * 24.2) + 2 + (prcnt_windowInnerWidth*22.8) - 2}px`
+        beer_menu_sqr_lines_vertical_4.style.left = `${24 + (prcnt_windowInnerWidth * 24.2) + 2 + (prcnt_windowInnerWidth*22.8) + 2 + (prcnt_windowInnerWidth*21.8) - 2}px`
+        // beer_menu_sqr_lines_vertical_2.style.left = `${prcnt_windowInnerWidth * 29.6}px`
+        // beer_menu_sqr_lines_vertical_3.style.left = `${prcnt_windowInnerWidth * 53.4}px`
+        // beer_menu_sqr_lines_vertical_4.style.left =  `${prcnt_windowInnerWidth * 76.4}px`
     }
 }

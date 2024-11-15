@@ -1,3 +1,9 @@
+.beer_menu_sqr_0305_column_N{
+    /* top: -20px; */
+    height: 35px;
+    vertical-align: baseline;
+}
+
 .beer_menu_sqr_snack{
     z-index: 3;
     position: absolute;
@@ -139,7 +145,7 @@
     /* margin-top: 170px;     */
     /* align-items: center; */
     /* margin: 10px; */
-    width: 190px;
+    width: 180px;
     height: 540px;
     background-image: url(/src/img/png/cash_receipt.png);
     background-repeat: no-repeat;
@@ -151,7 +157,7 @@
 }
 .beer_cards_card_image_box{
     height: 275px;
-    width: 190px;
+    width: 180px;
 }
 .beer_cards_card_img{
     position: absolute;

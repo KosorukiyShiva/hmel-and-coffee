@@ -60,6 +60,8 @@ const beer_menu_sqr_05_text_7 = document.getElementById('beer_menu_sqr_05_text_7
 const beer_menu_sqr_03_text_8 = document.getElementById('beer_menu_sqr_03_text_8')
 const beer_menu_sqr_05_text_8 = document.getElementById('beer_menu_sqr_05_text_8')
 
+// const beer_menu_sqr_snack_sqr_craft_points_chips_sub = document.getElementById('')
+
 var data_columnB_tab_outter = sessionStorage.getItem("data_columnB_tab_out")
 var data_columnC_tab_outter = sessionStorage.getItem("data_columnC_tab_out")
 var data_columnD_tab_outter = sessionStorage.getItem("data_columnD_tab_out")
@@ -392,7 +394,53 @@ function beer_table(){
     if(open_state === false){
         open_state = !open_state
         console.log(open_state)
-        if(windowInnerWidth <= 400){
+        if(windowInnerWidth <= 360){
+            beer_menu.style.height = `${925}px`
+            beer_menu_sqr.style.height = `${880}px`
+
+            beer_menu_sqr_snack.style.left = `${adapt_coeff}px`
+            beer_menu_sqr_snack.style.width = `${prcnt_windowInnerWidth * 88.3}px`
+            beer_menu_sqr_snack.style.height = `${430}px`
+            
+            beer_menu_sqr_snack_head.style.left = `${((prcnt_windowInnerWidth * 88.3) - 165)/2}px`
+            
+            beer_menu_sqr_snack_parent.style.left = `${((prcnt_windowInnerWidth * 88.3) - 285)/2}px`
+            beer_menu_sqr_snack_parent.style.width = `${285}px`
+            
+            beer_menu_sqr_snack_child_1.style.width = `${285}px`
+            beer_menu_sqr_snack_child_2.style.width = `${285}px`
+            
+            beer_menu_sqr_snack_sqr_factory_points_1.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_factory_points_2.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_factory_points_3.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_factory_points_4.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_factory_points_5.style.width = `${285}px`
+            
+            beer_menu_sqr_snack_sqr_factory_points_text_1.textContent = `● Арахис...........................`
+            beer_menu_sqr_snack_sqr_factory_points_text_2.textContent = `● Арахис в оболочке....`
+            beer_menu_sqr_snack_sqr_factory_points_text_3.textContent = `● Гренки.................................`
+            beer_menu_sqr_snack_sqr_factory_points_text_4.textContent = `● Вобла...............................`
+            beer_menu_sqr_snack_sqr_factory_points_text_5.textContent = `● Фисташки.........................`
+            
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub.style.width = `${215}px`
+            
+            beer_menu_sqr_snack_sqr_craft_points_1.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_craft_points_2.style.width = `${285}px`
+            beer_menu_sqr_snack_sqr_craft_points_3.style.width = `${285}px`
+            
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_1.textContent = 'чечил......................'
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_2.textContent = 'шарики...................'
+            beer_menu_sqr_snack_sqr_craft_points_chesse_sub_3.textContent = 'бочонок...................'
+
+            beer_menu_sqr_snack_sqr_craft_points_chips_sub_1.style.marginLeft = `${20}px`
+            beer_menu_sqr_snack_sqr_craft_points_chips_sub_2.style.marginLeft = `${20}px`
+            beer_menu_sqr_snack_sqr_craft_points_chips_sub_3.style.marginLeft = `${20}px`
+            // beer_menu_sqr_snack_sqr_craft_points_chesse_sub.style.marginLeft = `${20}px`
+            beer_menu_sqr_button.style.top = `${800}px`
+            coffe_menu_sqr_sirops_text.textContent = '↑свернуть↑'
+            return
+        }
+        if(windowInnerWidth <= 400 && windowInnerWidth >= 360){
             beer_menu.style.height = `${925}px`
             beer_menu_sqr.style.height = `${870}px`
 

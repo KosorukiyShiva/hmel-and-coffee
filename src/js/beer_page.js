@@ -22,6 +22,10 @@ const beer_menu_sqr_snack_sqr_craft_points_1 =document.getElementById('beer_menu
 const beer_menu_sqr_snack_sqr_craft_points_2 =document.getElementById('beer_menu_sqr_snack_sqr_craft_points_2')
 const beer_menu_sqr_snack_sqr_craft_points_3 =document.getElementById('beer_menu_sqr_snack_sqr_craft_points_3')
 
+const beer_menu_sqr_snack_sqr_craft_points_chips_sub_1 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chips_sub_1')
+const beer_menu_sqr_snack_sqr_craft_points_chips_sub_2 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chips_sub_2')
+const beer_menu_sqr_snack_sqr_craft_points_chips_sub_3 = document.getElementById('beer_menu_sqr_snack_sqr_craft_points_chips_sub_3')
+
 const beer_menu_sqr_snack_sqr_factory_points_text_1 = document.getElementById('beer_menu_sqr_snack_sqr_factory_points_text_1')
 const beer_menu_sqr_snack_sqr_factory_points_text_2 = document.getElementById('beer_menu_sqr_snack_sqr_factory_points_text_2')
 const beer_menu_sqr_snack_sqr_factory_points_text_3 = document.getElementById('beer_menu_sqr_snack_sqr_factory_points_text_3')
@@ -41,32 +45,32 @@ beer_menu_sqr_snack.style.height = `${0}px`
 beer_cards.style.width = `${windowInnerWidth}px`
 if(windowInnerWidth < 360){
     beer_cards.style.height = `${quantity_of_position_outter*540}px`
-    beer_cards.style.gridTemplateColumns = `190px`
+    beer_cards.style.gridTemplateColumns = `180px`
     beer_cards.style.justifyContent = `center`
 }
 if((windowInnerWidth >=360) && (windowInnerWidth < 530)){
     quantity_of_position_outter_ /= 2
     quantity_of_position_outter_ = Math.ceil(quantity_of_position_outter_) 
     beer_cards.style.height = `${quantity_of_position_outter_*540}px`
-    beer_cards.style.gridTemplateColumns = `190px 190px`
+    beer_cards.style.gridTemplateColumns = `180px 180px`
 }
 if((windowInnerWidth >= 530) && (windowInnerWidth < 700)){
     quantity_of_position_outter_ /= 3
     quantity_of_position_outter_ = Math.ceil(quantity_of_position_outter_) 
     beer_cards.style.height = `${quantity_of_position_outter_*540}px`
-    beer_cards.style.gridTemplateColumns = `190px 190px 190px`
+    beer_cards.style.gridTemplateColumns = `180px 180px 180px`
 }
 if((windowInnerWidth >= 700) && (windowInnerWidth < 870)){
     quantity_of_position_outter_ /= 4
     quantity_of_position_outter_ = Math.ceil(quantity_of_position_outter_) 
     beer_cards.style.height = `${quantity_of_position_outter_*540}px`
-    beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px`
+    beer_cards.style.gridTemplateColumns = `180px 180px 180px 180px`
 }
 if((windowInnerWidth >= 870) && (windowInnerWidth < 1040)){
     quantity_of_position_outter_ /= 5
     quantity_of_position_outter_ = Math.ceil(quantity_of_position_outter_) 
     beer_cards.style.height = `${quantity_of_position_outter_*540}px`
-    beer_cards.style.gridTemplateColumns = `190px 190px 190px 190px 190px`
+    beer_cards.style.gridTemplateColumns = `180px 180px 180px 180px 180px`
 }
 
 

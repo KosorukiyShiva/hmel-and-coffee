@@ -16,7 +16,8 @@ const coffe_menu_sqr_text_6 = document.getElementById('coffe_menu_sqr_text_6')
 const coffe_menu_sqr_text_7 = document.getElementById('coffe_menu_sqr_text_7')
 const coffe_menu_sqr_text_8 = document.getElementById('coffe_menu_sqr_text_8')
 
-
+const sirops_table_sqr_texts = document.getElementById('sirops_table_sqr')
+const sirops_table_sqr = document.getElementById('sirops_table_sqr_texts')
 
 coffe_menu.style.width = `${prcnt_windowInnerWidth*95.8}px`
 
