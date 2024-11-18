@@ -849,3 +849,802 @@ a{
         font-size: 20px;
     }
 }   
+@media(min-aspect-ratio: 4/3 ){
+    .box_menu{
+        height: 120px; /*430px*/
+        margin-top: 2.3%;
+        position: relative;
+        z-index: 4;
+    }
+    .box_menu_column{
+        position: fixed;
+        width: 180px;
+        height: 60px;
+    }
+    .box_menu_column_left{
+        position: fixed;
+        left: 7%;
+    }
+    .box_menu_column_left_map_icon{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px ;
+        scale: 83%;     
+    }
+    .box_menu_column_left_afisha_icon{
+        position: absolute;
+        left: 120px;
+        width: 60px;
+        height: 60px;
+        scale: 83%;
+    }
+    
+    
+    
+    .box_menu_column_right{
+        position: fixed;
+        right: 7%;
+    }
+    .box_menu_column_right_coffee_icon{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px ;
+        scale: 83%;
+    }
+    .box_menu_column_right_hmel_icon{
+        position: absolute;
+        left: 120px;
+        width: 60px;
+        height: 60px;
+        scale: 83%;
+    }
+    
+    
+    
+    .box_menu_column_middle{
+        position: sticky;
+        width: 105px;
+        height: 117px;
+        top: 2.1%;
+        /* left: 37%; */
+        margin: 0 auto ;
+    }
+    .box_menu_main_logo_icon{
+        position: fixed;
+        /* margin: 5.3px 0 20px 37.7%; */
+        top: 10px;
+        width: 105px;
+        height: 117px;
+        
+    }
+    
+    #box_menu_textid{
+        position: relative;
+        height: 250px;
+        /* overflow-x: hidden; */
+        width: 100vh;
+        margin: 0 auto 20px;
+
+    }
+    #box_menu_text_coffee{
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #box_menu_text_beer{
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #box_menu_text_poster{
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+
+    #box_menu_text_lines{
+        position: absolute;
+        right: 0px;
+    }
+    #box_menu_text_coffee_line{
+        position: absolute;
+        width: 0;
+        right: 0;
+        
+    }
+    #box_menu_text_beer_line{
+        position: absolute;
+        width: 0;
+        /* margin-top: 72px; */
+        right: 0;
+    }
+    #box_menu_text_poster_line{
+        position: absolute;
+        width: 0;
+        right: 0;
+        /* margin-top: 144px; */
+    }
+
+
+    .box_menu_text_icons{
+        position: absolute;
+        height: 250px;
+        width: 60px;
+        left: 7%;
+        /* background-color: aquamarine; */
+    }
+    #box_menu_text_icons_coffee_icon{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #box_menu_text_icons_hmel_icon{
+        /* margin-bottom: 10px; */
+        top: 80px;
+        left: 0;
+    }
+    #box_menu_text_icons_afisha_icon{
+        top: 160px;
+        left: 0px;
+    }
+
+    
+    /*CAROUSEL FIELD*/
+    #carousel_block{
+        margin: 0 0 20px;
+    }
+    .slides_carousel{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 340px;
+        /* height: 200px; */
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        
+    }
+    .slides_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100px;
+        /* height: 250px; */
+        /* font-size: 50px; */
+        scroll-snap-align: start;
+        background-repeat: no-repeat;
+        /* background-position: -40px 0px; */
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .slides_img_0{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/1.png);
+        /* background-color: blue; */
+    }
+    .slides_img_1{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/2.png);
+        /* background-color: brown; */
+    }
+    .slides_img_2{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/3.png);
+        /* background-color: aqua; */
+    }
+
+
+    #carousel_block1{
+        margin: 0 0 20px;
+    }
+    .slides_carousel1{
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        width: 340px;
+        /* height: 200px; */
+        margin: 0 auto;
+        scroll-snap-type: x mandatory;
+        
+    }
+    .slides_img1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 100px;
+        /* height: 250px; */
+        /* font-size: 50px; */
+        scroll-snap-align: start;
+        background-repeat: no-repeat;
+        /* background-position: -40px 0px; */
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .slides_img_01{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/1.png);
+        /* background-color: blue; */
+    }
+    .slides_img_11{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/2.png);
+        /* background-color: brown; */
+    }
+    .slides_img_21{
+        /* width: 255px; */
+        height: 320px;
+        background-image: url(/src/img/png/3.png);
+        /* background-color: aqua; */
+    }
+
+    /*COFFE MENU*/
+    #coffe_menu{
+        position: relative;
+        z-index: 1;
+        width: 395px;
+        height: 240px;
+        margin: 0 auto 20px;
+        /* background-color: aquamarine; */
+    }
+    .coffe_menu_head{
+        position: absolute;
+        width: 177px;
+        height: 49px;
+        left: 109px;
+        /* margin: 0 auto -10px; */
+        z-index: 3;
+        background-image: url("/src/icons/menu_table.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        /* background-color: aqua; */
+    }
+    .coffe_menu_sqr{
+        position: absolute;
+        width: 387px;
+        height: 187px;
+        top: 45px;
+        z-index: 2;
+        /* margin: 0 auto; */
+        border: #FFFFFF solid 4px;
+        background-color: #1D1D1D;
+    }
+    .coffe_menu_sqr_left{
+        position: absolute;
+        margin-top: 20px;
+        width: 165px;
+        left: 15px;
+    }
+    .coffe_menu_sqr_right{
+        position: absolute;
+        margin-top: 20px;
+        width: 165px;
+        right: 15px;
+    }
+    .coffe_menu_sqr_text_block{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .coffe_menu_sqr_text_block {
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .coffe_menu_sqr_text{
+        background-color: #1D1D1D; /* Это необходимо, чтобы перекрыть точки фоном */
+        margin: 0;
+        font-family: Chalkduster;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    .coffe_menu_sqr_price{
+        position: absolute;
+        background-color: #1D1D1D; /* Это необходимо, чтобы перекрыть точки фоном */
+        margin: 2px;
+        padding-left: 2px;
+        right: 0;
+        font-family: Chalkduster;
+        font-size: 15px;
+        color: #FFFFFF;
+    }
+    .coffe_menu_sqr_line{
+        position: absolute;
+        margin-top: 20px;
+        left:192px;
+        border: #FFFFFF solid 1.5px;
+        height: 94px;
+
+    }
+    .coffe_menu_sqr_sirops{
+        position: relative;
+        width: 230px;
+        height: 58px;
+        border-radius: 32px;
+        left: 78.5px;
+        top: 124px;
+        background-color: #1D1D1D;
+        border: solid 4px #FFFFFF;
+    }
+    .coffe_menu_sqr_sirops_text{
+        /* vertical-align: middle; */
+        font-family: Sunday;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    /*BEER TABLE*/
+    .beer_menu{
+        position: relative;
+        width: 395px;
+        height: 510px;
+        margin: 0 auto 20px;
+        z-index: 1;
+        /* background-color: brown; */
+    }
+    .beer_menu_head{
+        position: absolute;
+        width: 177px;
+        height: 90px;
+        /* margin: 0 auto; */
+        left: 109px;
+        /* background-color: aqua; */
+        z-index: 3;
+        background-image: url("/src/icons/menu_pivo_rozliv_table.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .beer_menu_sqr{
+        position: absolute;
+        width: 387px;
+        height: 454px;
+        top: 48.5px;
+        z-index: 2;
+        border: #FFFFFF solid 4px;
+        background-color: #1D1D1D;
+    }
+
+    
+    .beer_menu_sqr_number_column{
+        z-index: 3;
+        top: 45px;
+        position: absolute;
+        left: 10px;
+        width: 14px;
+        height: 297px;
+        font-size: 20px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_number_column_N{
+        font-size: 17px;
+        font-family: Chalkduster;
+    }
+    .beer_menu_sqr_number_column_{
+        position: relative;
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+
+
+    .beer_menu_sqr_name_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 38px;
+        width: 100px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+    }
+    .beer_menu_sqr_name_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_sqr_name_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_brewery_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 140px;
+        width: 90px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_brewery_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_sqr_brewery_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 238px;
+        width: 90px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_sqr_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_abv_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 331px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_abv_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_abv_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_ibu_style_column{
+        z-index: 3;
+        position: absolute;
+        top: 45px;
+        left: 381px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_ibu_style_column_{
+        height: 35px;
+        display: grid;
+        align-items: end;
+    }
+    .beer_menu_ibu_style_column_N{
+        line-height: 17px;
+    }
+
+
+    .beer_menu_sqr_0305_column{
+        /* opacity: 0; */
+        z-index: 3;
+        position: absolute;
+        top: 30px;
+        left: 331px;
+        width: 50px;
+        height: 297px;
+        font-size: 12px;
+        font-family: Chalkduster;
+        color: #FFFFFF;
+        /* background-color: aquamarine; */
+        /* background-color: grey; */
+    }
+    .beer_menu_sqr_0305_column_{
+        width: 50px;
+        height: 35px;
+        display: grid;
+        align-items: center;
+        
+    }
+    .beer_menu_sqr_0305_column_N{
+        line-height: 17px;
+    }
+    .beer_menu_sqr_03_text{
+        position: absolute;
+        /* top: 5px; */
+        width: 32px;
+        rotate: -62deg;
+        left:0px;
+    }
+    .beer_menu_sqr_00_text{
+        position: absolute;
+        /* top: 5px; */
+        width: 32px;
+        rotate: -62deg;
+        left: 10px;
+    }
+    .beer_menu_sqr_05_text{
+        position: absolute;
+        /* top: 5px; */
+        right: 0px;
+        width: 32px;
+        rotate: -62deg;
+    }
+
+
+    .beer_menu_sqr_lines{
+        position: absolute;
+        top: 32px;
+        z-index: 4;
+        left: 11px;
+    }
+    .beer_menu_sqr_lines_horizontals{
+        position: absolute;
+    }
+    .beer_menu_sqr_lines_horisontal{
+        border:solid #FFFFFF 1px;
+        width: 364px;
+        margin-top: 33px;
+    }
+    .beer_menu_sqr_lines_verticals{
+        position: absolute;
+    }
+    .beer_menu_sqr_lines_vertical{
+        position: absolute;
+        height: 300px;
+        top: 17px;
+        width: 0px;
+        border:solid #FFFFFF 1px;
+    }
+    .beer_menu_sqr_lines_vertical_1{
+        left: 19px;
+    }
+    .beer_menu_sqr_lines_vertical_2{
+        left: 122px;
+    }
+    .beer_menu_sqr_lines_vertical_3{
+        left: 218px;
+    }
+    .beer_menu_sqr_lines_vertical_4{
+        left: 315px;
+    }
+    .beer_menu_sqr_lines_vertical_5{
+        left: 365px;
+    }
+    .beer_menu_sqr_lines_vertical_6{
+        left: 412px;
+    }
+
+    .beer_menu_sqr_button{
+        position: absolute;
+        left: 22.5px;
+        top: 374px;
+        background-color: #1D1D1D;
+        height: 60px;
+        width: 306px;
+        border-radius: 28px;
+        border: #FFFFFF solid 4px;
+    }
+
+    /* poster_block*/
+    .poster_block{
+        position: relative;
+        width: 412px;
+        height: 484px;
+        margin-bottom: 20px;
+    }
+    .poster_block_banner{
+        position: absolute;
+        width: 412px;
+        height: 280px;
+        background-color: aqua ;
+        background-image: url(/src/img/png/afisha.png);
+        background-repeat: repeat-x;
+        background-position-y: center;
+        border-radius: 20px 20px 0 0 ;
+    }
+    .poster_block_banner_text{
+        position: absolute;
+        left: 40px;
+        top: 11px;
+        font-family: Sunday;
+        font-size: 40px;
+        color: #FFFFFF;
+        
+    }
+    .poster_block_scroller{
+        position: absolute;
+        top: 100px;
+        left: 14px;
+        width: 376px;
+        height: 376px;
+        margin: 0 auto;
+        background-color: #1D1D1D;
+        border: #FFFFFF solid 4px;
+    }
+    .poster_block_scroller_sqr{
+        position: relative;
+        left: 24.5px; 
+        width: 337px;
+        height: 376px;
+        scroll-snap-type: y  mandatory;
+        overflow-x: auto;
+    }
+    .poster_block_scroller_sqr_block_{
+        height: 45px;
+        width: 337px;
+        margin-bottom: 5px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        scroll-snap-align: start;
+    }
+    .poster_block_scroller_sqr_block_text{
+        position: absolute;
+        width: 337px;
+        height: 43px;
+        font-size: 15px;
+        font-family: Chalkduster;
+        background-color: #1D1D1D;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 20px;
+    }
+
+    /*MAP*/
+    .map{
+        width: 412px;
+        height: 545px;
+        margin-bottom: 20px;
+    }
+    .map_sqr{
+        position: absolute;
+        width: 386px;
+        height: 535px;
+        left: 9px;
+        background-color: #1D1D1D;
+        border:#FFFFFF solid 4px;
+    }
+    .map_sqr_head_text{
+        position: absolute;
+        left: 40px;
+        top: 15px;
+        font-family: Sunday;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+    .map_sqr_map{
+        overflow: hidden;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        width: 302px;
+        height: 310px;
+        border: #1D1D1D solid 2px;
+        border-radius: 20px;
+        background-image: url(/src/img/png/map.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .map_sqr_text_adress{
+        position: absolute;
+        top: 400px;
+        left: 40px;
+        width: 302px;
+        height: 60px;
+        font-size: 24px;
+        font-family: Chalkduster;
+        /* background-color: #1D1D1D; */
+        text-align: left;
+        color: #FFFFFF;
+        line-height: 20px;
+    }
+    /* .map_sqr_phone{
+        position: absolute;
+        width: 306px;
+        height: 60px;
+    } */
+    .map_sqr_phone_icon{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        /* background-color: aqua; */
+        top: 470px;
+        left: 30px;
+    }
+    .map_sqr_phone_num{
+        position: absolute;
+        top: 480px;
+        left: 77px;
+        width: 250px;
+        height: 60px;
+        font-size: 24px;
+        font-family: Chalkduster;
+        /* background-color: #1D1D1D; */
+        text-align: left;
+        color: #FFFFFF;
+        line-height: 20px;
+    }
+
+    /* w? */
+    /*vizitka*/
+    .vizitka{
+        height: 203px;
+        margin-bottom: 20px;
+    }
+    .vizitka_sqr{
+        position: absolute;
+        width: 386px;
+        height: 195px;
+        left: 9px;
+        background-color: #1D1D1D;
+        border:#FFFFFF solid 4px;
+    }
+    .vizitka_sqr_by{
+        position: absolute;
+        top: 20px;
+        left: 106px;
+        font-family: Sunday;
+        text-align: center;
+        width: 174px;
+        font-size: 30px;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    .vizitka_sqr_by_name{
+        position: absolute;
+        top: 45px;
+        left: 133px;
+        font-family: Chalkduster;
+        text-align: center;
+        color: #FFFFFF;
+        width: 120px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .vizitka_sqr_contact{
+        position: absolute;
+        top: 85px;
+        left: 143px;
+        width: 100px;
+        font-family: Sunday;
+        text-align: center;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .vizitka_sqr_contact_info{
+        position: absolute;
+        top: 125px;
+        width: 300px;
+        font-family: Chalkduster;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 27px;
+        font-size: 20px;
+    }
+}

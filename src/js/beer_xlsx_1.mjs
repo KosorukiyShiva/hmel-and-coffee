@@ -1,7 +1,7 @@
 import * as XLSX from 'https://unpkg.com/xlsx/xlsx.mjs';
 
 
-const url = "http://127.0.0.1:5500/src/data/table.xlsx";
+const url = "http://192.168.1.23:5500/src/data/table.xlsx";
 const workbook_tab = XLSX.read(await (await fetch(url)).arrayBuffer());
 const worksheet_tab = workbook_tab.Sheets[workbook_tab.SheetNames[0]];
 
